@@ -1,9 +1,12 @@
 #include <iostream>
-#include "Classes/People/HRManager.h"
 
-using namespace People;
+#include "Classes/People/Worker.h"
+#include "Classes/Managers/Singleton.h"
+
 int main() {
-    HRManager manager();
-    manager().GetAllWorkers();
-    return 0;
+    auto v =Singleton<EmployerManager>::getInstance().GetWorkersList();
+    for(int i=0;v.size();i++)
+    {
+        cout<<v.at(i).GetName();
+    }
 }

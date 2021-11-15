@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Kursach_OOP.dir/Classes/People/HRManager.cpp.obj"
+  "CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj"
+  "CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj"
+  "CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj"
   "CMakeFiles/Kursach_OOP.dir/Classes/People/Person.cpp.obj"
-  "CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Work.cpp.obj"
+  "CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj"
+  "CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj"
   "CMakeFiles/Kursach_OOP.dir/main.cpp.obj"
   "Kursach_OOP.exe"
   "Kursach_OOP.exe.manifest"

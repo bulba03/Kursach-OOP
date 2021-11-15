@@ -80,10 +80,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Work/Kursach-OOP/Classes/People/HRManager.cpp">
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Enums/TaskState.cpp">
 			<Option target="Kursach_OOP"/>
 		</Unit>
-		<Unit filename="D:/Work/Kursach-OOP/Classes/People/HRManager.h">
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Enums/TaskState.h">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.cpp">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.h">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Managers/Singleton.cpp">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Managers/Singleton.h">
 			<Option target="Kursach_OOP"/>
 		</Unit>
 		<Unit filename="D:/Work/Kursach-OOP/Classes/People/Person.cpp">
@@ -92,10 +104,16 @@
 		<Unit filename="D:/Work/Kursach-OOP/Classes/People/Person.h">
 			<Option target="Kursach_OOP"/>
 		</Unit>
-		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/Work.cpp">
+		<Unit filename="D:/Work/Kursach-OOP/Classes/People/Worker.cpp">
 			<Option target="Kursach_OOP"/>
 		</Unit>
-		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/Work.h">
+		<Unit filename="D:/Work/Kursach-OOP/Classes/People/Worker.h">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/Task.cpp">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/Task.h">
 			<Option target="Kursach_OOP"/>
 		</Unit>
 		<Unit filename="D:/Work/Kursach-OOP/main.cpp">

@@ -1,34 +1,23 @@
 //
-// Created by bulba on 29.09.2021.
+// Created by bulba on 15.11.2021.
 //
 
 #ifndef KURSACH_OOP_PERSON_H
 #define KURSACH_OOP_PERSON_H
-#include "iostream"
-using namespace std;
-namespace People {
-    template<typename T>
-    class Person {
-    private:
-        string name;
-        string surname;
-        int age;
-        int salary;
-        T work;
 
-    public:
-        Person(string _name, string _surname, int _age, int _salary, T _work);
+#include "string"
+class Person {
+protected:
+    int age;
+    std::string name;
+    int salary;
 
-    public:
-        void ShowInfo();
+public:virtual void ShowInfo();
+public: void SetInfo(int _age, char* _name, int _salary);
+    std::string GetName();
+    int GetAge();
+    int GetSalary();
+};
 
-    public:
-        T GetWork();
 
-    public:
-        void GetPersonInfo();
-
-    };
-
-}
 #endif //KURSACH_OOP_PERSON_H

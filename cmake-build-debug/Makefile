@@ -128,29 +128,77 @@ Kursach_OOP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/build
 .PHONY : Kursach_OOP/fast
 
-Classes/People/HRManager.obj: Classes/People/HRManager.cpp.obj
-.PHONY : Classes/People/HRManager.obj
+Classes/Enums/TaskState.obj: Classes/Enums/TaskState.cpp.obj
+.PHONY : Classes/Enums/TaskState.obj
 
 # target to build an object file
-Classes/People/HRManager.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/HRManager.cpp.obj
-.PHONY : Classes/People/HRManager.cpp.obj
+Classes/Enums/TaskState.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj
+.PHONY : Classes/Enums/TaskState.cpp.obj
 
-Classes/People/HRManager.i: Classes/People/HRManager.cpp.i
-.PHONY : Classes/People/HRManager.i
+Classes/Enums/TaskState.i: Classes/Enums/TaskState.cpp.i
+.PHONY : Classes/Enums/TaskState.i
 
 # target to preprocess a source file
-Classes/People/HRManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/HRManager.cpp.i
-.PHONY : Classes/People/HRManager.cpp.i
+Classes/Enums/TaskState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.i
+.PHONY : Classes/Enums/TaskState.cpp.i
 
-Classes/People/HRManager.s: Classes/People/HRManager.cpp.s
-.PHONY : Classes/People/HRManager.s
+Classes/Enums/TaskState.s: Classes/Enums/TaskState.cpp.s
+.PHONY : Classes/Enums/TaskState.s
 
 # target to generate assembly for a file
-Classes/People/HRManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/HRManager.cpp.s
-.PHONY : Classes/People/HRManager.cpp.s
+Classes/Enums/TaskState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.s
+.PHONY : Classes/Enums/TaskState.cpp.s
+
+Classes/Managers/EmployerManager.obj: Classes/Managers/EmployerManager.cpp.obj
+.PHONY : Classes/Managers/EmployerManager.obj
+
+# target to build an object file
+Classes/Managers/EmployerManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj
+.PHONY : Classes/Managers/EmployerManager.cpp.obj
+
+Classes/Managers/EmployerManager.i: Classes/Managers/EmployerManager.cpp.i
+.PHONY : Classes/Managers/EmployerManager.i
+
+# target to preprocess a source file
+Classes/Managers/EmployerManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.i
+.PHONY : Classes/Managers/EmployerManager.cpp.i
+
+Classes/Managers/EmployerManager.s: Classes/Managers/EmployerManager.cpp.s
+.PHONY : Classes/Managers/EmployerManager.s
+
+# target to generate assembly for a file
+Classes/Managers/EmployerManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.s
+.PHONY : Classes/Managers/EmployerManager.cpp.s
+
+Classes/Managers/Singleton.obj: Classes/Managers/Singleton.cpp.obj
+.PHONY : Classes/Managers/Singleton.obj
+
+# target to build an object file
+Classes/Managers/Singleton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj
+.PHONY : Classes/Managers/Singleton.cpp.obj
+
+Classes/Managers/Singleton.i: Classes/Managers/Singleton.cpp.i
+.PHONY : Classes/Managers/Singleton.i
+
+# target to preprocess a source file
+Classes/Managers/Singleton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.i
+.PHONY : Classes/Managers/Singleton.cpp.i
+
+Classes/Managers/Singleton.s: Classes/Managers/Singleton.cpp.s
+.PHONY : Classes/Managers/Singleton.s
+
+# target to generate assembly for a file
+Classes/Managers/Singleton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.s
+.PHONY : Classes/Managers/Singleton.cpp.s
 
 Classes/People/Person.obj: Classes/People/Person.cpp.obj
 .PHONY : Classes/People/Person.obj
@@ -176,29 +224,53 @@ Classes/People/Person.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/Person.cpp.s
 .PHONY : Classes/People/Person.cpp.s
 
-Classes/Speciefic/Work.obj: Classes/Speciefic/Work.cpp.obj
-.PHONY : Classes/Speciefic/Work.obj
+Classes/People/Worker.obj: Classes/People/Worker.cpp.obj
+.PHONY : Classes/People/Worker.obj
 
 # target to build an object file
-Classes/Speciefic/Work.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Work.cpp.obj
-.PHONY : Classes/Speciefic/Work.cpp.obj
+Classes/People/Worker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj
+.PHONY : Classes/People/Worker.cpp.obj
 
-Classes/Speciefic/Work.i: Classes/Speciefic/Work.cpp.i
-.PHONY : Classes/Speciefic/Work.i
+Classes/People/Worker.i: Classes/People/Worker.cpp.i
+.PHONY : Classes/People/Worker.i
 
 # target to preprocess a source file
-Classes/Speciefic/Work.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Work.cpp.i
-.PHONY : Classes/Speciefic/Work.cpp.i
+Classes/People/Worker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.i
+.PHONY : Classes/People/Worker.cpp.i
 
-Classes/Speciefic/Work.s: Classes/Speciefic/Work.cpp.s
-.PHONY : Classes/Speciefic/Work.s
+Classes/People/Worker.s: Classes/People/Worker.cpp.s
+.PHONY : Classes/People/Worker.s
 
 # target to generate assembly for a file
-Classes/Speciefic/Work.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Work.cpp.s
-.PHONY : Classes/Speciefic/Work.cpp.s
+Classes/People/Worker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.s
+.PHONY : Classes/People/Worker.cpp.s
+
+Classes/Speciefic/Task.obj: Classes/Speciefic/Task.cpp.obj
+.PHONY : Classes/Speciefic/Task.obj
+
+# target to build an object file
+Classes/Speciefic/Task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj
+.PHONY : Classes/Speciefic/Task.cpp.obj
+
+Classes/Speciefic/Task.i: Classes/Speciefic/Task.cpp.i
+.PHONY : Classes/Speciefic/Task.i
+
+# target to preprocess a source file
+Classes/Speciefic/Task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.i
+.PHONY : Classes/Speciefic/Task.cpp.i
+
+Classes/Speciefic/Task.s: Classes/Speciefic/Task.cpp.s
+.PHONY : Classes/Speciefic/Task.s
+
+# target to generate assembly for a file
+Classes/Speciefic/Task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.s
+.PHONY : Classes/Speciefic/Task.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -233,15 +305,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Kursach_OOP
-	@echo ... Classes/People/HRManager.obj
-	@echo ... Classes/People/HRManager.i
-	@echo ... Classes/People/HRManager.s
+	@echo ... Classes/Enums/TaskState.obj
+	@echo ... Classes/Enums/TaskState.i
+	@echo ... Classes/Enums/TaskState.s
+	@echo ... Classes/Managers/EmployerManager.obj
+	@echo ... Classes/Managers/EmployerManager.i
+	@echo ... Classes/Managers/EmployerManager.s
+	@echo ... Classes/Managers/Singleton.obj
+	@echo ... Classes/Managers/Singleton.i
+	@echo ... Classes/Managers/Singleton.s
 	@echo ... Classes/People/Person.obj
 	@echo ... Classes/People/Person.i
 	@echo ... Classes/People/Person.s
-	@echo ... Classes/Speciefic/Work.obj
-	@echo ... Classes/Speciefic/Work.i
-	@echo ... Classes/Speciefic/Work.s
+	@echo ... Classes/People/Worker.obj
+	@echo ... Classes/People/Worker.i
+	@echo ... Classes/People/Worker.s
+	@echo ... Classes/Speciefic/Task.obj
+	@echo ... Classes/Speciefic/Task.i
+	@echo ... Classes/Speciefic/Task.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
