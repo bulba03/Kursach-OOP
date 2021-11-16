@@ -10,12 +10,13 @@
 #include "Singleton.h"
 #include <vector>
 class EmployerManager: public Singleton<EmployerManager>{
-public: static std::vector<Person> workers;
+public: std::vector<Person> workers;
+public: int val = 5;
 public: std::vector<Person> GetWorkersList()
     {
         return EmployerManager::workers;
     }
-    static void AddWorker(Person worker)
+    void AddWorker(Person worker)
     {
         workers.push_back(worker);
     }

@@ -4,9 +4,7 @@
 #include "Classes/Managers/Singleton.h"
 
 int main() {
+    Worker a = Worker();
     auto v =Singleton<EmployerManager>::getInstance().GetWorkersList();
-    for(int i=0;v.size();i++)
-    {
-        cout<<v.at(i).GetName();
-    }
+    cout<<v.at(0).GetName();
 }
