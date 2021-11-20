@@ -176,6 +176,30 @@ Classes/Managers/EmployerManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.s
 .PHONY : Classes/Managers/EmployerManager.cpp.s
 
+Classes/Managers/Labor.obj: Classes/Managers/Labor.cpp.obj
+.PHONY : Classes/Managers/Labor.obj
+
+# target to build an object file
+Classes/Managers/Labor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj
+.PHONY : Classes/Managers/Labor.cpp.obj
+
+Classes/Managers/Labor.i: Classes/Managers/Labor.cpp.i
+.PHONY : Classes/Managers/Labor.i
+
+# target to preprocess a source file
+Classes/Managers/Labor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.i
+.PHONY : Classes/Managers/Labor.cpp.i
+
+Classes/Managers/Labor.s: Classes/Managers/Labor.cpp.s
+.PHONY : Classes/Managers/Labor.s
+
+# target to generate assembly for a file
+Classes/Managers/Labor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.s
+.PHONY : Classes/Managers/Labor.cpp.s
+
 Classes/Managers/Singleton.obj: Classes/Managers/Singleton.cpp.obj
 .PHONY : Classes/Managers/Singleton.obj
 
@@ -248,6 +272,30 @@ Classes/People/Worker.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.s
 .PHONY : Classes/People/Worker.cpp.s
 
+Classes/Speciefic/AdminMenu.obj: Classes/Speciefic/AdminMenu.cpp.obj
+.PHONY : Classes/Speciefic/AdminMenu.obj
+
+# target to build an object file
+Classes/Speciefic/AdminMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj
+.PHONY : Classes/Speciefic/AdminMenu.cpp.obj
+
+Classes/Speciefic/AdminMenu.i: Classes/Speciefic/AdminMenu.cpp.i
+.PHONY : Classes/Speciefic/AdminMenu.i
+
+# target to preprocess a source file
+Classes/Speciefic/AdminMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.i
+.PHONY : Classes/Speciefic/AdminMenu.cpp.i
+
+Classes/Speciefic/AdminMenu.s: Classes/Speciefic/AdminMenu.cpp.s
+.PHONY : Classes/Speciefic/AdminMenu.s
+
+# target to generate assembly for a file
+Classes/Speciefic/AdminMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.s
+.PHONY : Classes/Speciefic/AdminMenu.cpp.s
+
 Classes/Speciefic/Task.obj: Classes/Speciefic/Task.cpp.obj
 .PHONY : Classes/Speciefic/Task.obj
 
@@ -311,6 +359,9 @@ help:
 	@echo ... Classes/Managers/EmployerManager.obj
 	@echo ... Classes/Managers/EmployerManager.i
 	@echo ... Classes/Managers/EmployerManager.s
+	@echo ... Classes/Managers/Labor.obj
+	@echo ... Classes/Managers/Labor.i
+	@echo ... Classes/Managers/Labor.s
 	@echo ... Classes/Managers/Singleton.obj
 	@echo ... Classes/Managers/Singleton.i
 	@echo ... Classes/Managers/Singleton.s
@@ -320,6 +371,9 @@ help:
 	@echo ... Classes/People/Worker.obj
 	@echo ... Classes/People/Worker.i
 	@echo ... Classes/People/Worker.s
+	@echo ... Classes/Speciefic/AdminMenu.obj
+	@echo ... Classes/Speciefic/AdminMenu.i
+	@echo ... Classes/Speciefic/AdminMenu.s
 	@echo ... Classes/Speciefic/Task.obj
 	@echo ... Classes/Speciefic/Task.i
 	@echo ... Classes/Speciefic/Task.s

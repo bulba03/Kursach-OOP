@@ -5,21 +5,14 @@
 #ifndef KURSACH_OOP_EMPLOYERMANAGER_H
 #define KURSACH_OOP_EMPLOYERMANAGER_H
 
-
-#include "../People/Person.h"
-#include "Singleton.h"
 #include <vector>
+#include "Singleton.h"
+#include "../People/Worker.h"
 class EmployerManager: public Singleton<EmployerManager>{
-public: std::vector<Person> workers;
-public: int val = 5;
-public: std::vector<Person> GetWorkersList()
-    {
-        return EmployerManager::workers;
-    }
-    void AddWorker(Person worker)
-    {
-        workers.push_back(worker);
-    }
+public: std::vector<Worker> workers;
+     std::vector<Worker> GetWorkersList();
+    void AddWorker(Worker worker);
+    std::vector<Worker> GetFreeWorkers();
 };
 
 

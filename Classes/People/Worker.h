@@ -5,26 +5,24 @@
 #ifndef KURSACH_OOP_WORKER_H
 #define KURSACH_OOP_WORKER_H
 
-
-#include "Person.h"
 #include <vector>
 #include "../Speciefic/Task.h"
-#include "../Managers/EmployerManager.h"
+#include "Person.h"
 
-class Worker: public Person {
-public: vector<Task> tasks;
-    Worker()
-    {
-        age=10;
-        name= "ASAS";
-        salary=10;
-        auto task = Task();
-        tasks.push_back(task);
-        EmployerManager::getInstance().AddWorker(*this);
-    };
-    void ShowInfo() override;
-    Task* GetActiveTasks();
+class Worker : public Person {
+    public:
+        vector<Task> tasks;
+        Worker();
+
+        void ShowInfo() override;
+
+        int GetAge() override;
+
+        int GetSalary() override;
+
+        string GetName() override;
+
+        Task *GetActiveTasks();
+        vector<Task> GetAllTasks();
 };
-
-
 #endif //KURSACH_OOP_WORKER_H

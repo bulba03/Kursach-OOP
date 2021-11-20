@@ -5,10 +5,21 @@ CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj: \
  ../Classes/Enums/TaskState.cpp \
  ../Classes/Enums/TaskState.h
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj: \
+ ../Classes/Enums/TaskState.h \
  ../Classes/Managers/EmployerManager.cpp \
  ../Classes/Managers/EmployerManager.h \
  ../Classes/Managers/Singleton.h \
- ../Classes/People/Person.h
+ ../Classes/People/Person.h \
+ ../Classes/People/Worker.h \
+ ../Classes/Speciefic/Task.h
+CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj: \
+ ../Classes/Enums/TaskState.h \
+ ../Classes/Managers/Labor.cpp \
+ ../Classes/Managers/Labor.h \
+ ../Classes/Managers/Singleton.h \
+ ../Classes/People/Person.h \
+ ../Classes/People/Worker.h \
+ ../Classes/Speciefic/Task.h
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj: \
  ../Classes/Managers/Singleton.cpp \
  ../Classes/Managers/Singleton.h
@@ -23,6 +34,15 @@ CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj: \
  ../Classes/People/Worker.cpp \
  ../Classes/People/Worker.h \
  ../Classes/Speciefic/Task.h
+CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj: \
+ ../Classes/Enums/TaskState.h \
+ ../Classes/Managers/EmployerManager.h \
+ ../Classes/Managers/Singleton.h \
+ ../Classes/People/Person.h \
+ ../Classes/People/Worker.h \
+ ../Classes/Speciefic/AdminMenu.cpp \
+ ../Classes/Speciefic/AdminMenu.h \
+ ../Classes/Speciefic/Task.h
 CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj: \
  ../Classes/Enums/TaskState.h \
  ../Classes/Speciefic/Task.cpp \
@@ -33,5 +53,6 @@ CMakeFiles/Kursach_OOP.dir/main.cpp.obj: \
  ../Classes/Managers/Singleton.h \
  ../Classes/People/Person.h \
  ../Classes/People/Worker.h \
+ ../Classes/Speciefic/AdminMenu.h \
  ../Classes/Speciefic/Task.h \
  ../main.cpp

@@ -6,26 +6,26 @@
 #include "Person.h"
 #include "string"
 using namespace std;
-void Person::SetInfo(int _age, char *_name, int _salary) {
-    age = _age;
-    name = _name;
-    salary = _salary;
-}
+    void Person::SetInfo(int _age, char *_name, int _salary) {
+        age = _age;
+        name = _name;
+        salary = _salary;
+    }
 
-std::string Person::GetName() {
-    return  name;
-}
+    std::string Person::GetName() {
+        return name;
+    }
 
-int Person::GetAge() {
-    return age;
-}
-int Person:: GetSalary()
-{
-    return salary;
-}
+    int Person::GetAge() {
+        return age;
+    }
 
-void Person::ShowInfo() {
-    cout<<"Age: "<<age<<endl;
-    cout<<"Salary: "<<salary<<endl;
-    cout<<"Name: "<<name<<endl;
-}
+    int Person::GetSalary() {
+        return salary;
+    }
+
+    void Person::ShowInfo() {
+        cout << "Age: " << age << endl;
+        cout << "Salary: " << salary << endl;
+        cout << "Name: " << name << endl;
+    }

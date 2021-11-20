@@ -80,12 +80,12 @@ clean: CMakeFiles/Kursach_OOP.dir/clean
 CMakeFiles/Kursach_OOP.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Kursach_OOP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Kursach_OOP"
 .PHONY : CMakeFiles/Kursach_OOP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Kursach_OOP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Kursach_OOP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/Kursach_OOP.dir/rule

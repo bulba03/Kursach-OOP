@@ -9,11 +9,12 @@ Task::Task() {
         cin>>taskTitle;
         cout<<"vvedite opisanie: ";
         cin>>taskDiscription;
+        state =TaskState::Active;
 }
 
 Task::Task(string tittle, string discription) {
     taskTitle = tittle;
     taskDiscription = discription;
-    state=TaskState::TODO;
+    state=TaskState::Active;
     cout<<static_cast<char>(state);
 }
