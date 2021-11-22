@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\bulba\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\bulba\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\Work\Kursach-OOP\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\bulba\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\bulba\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -128,30 +128,6 @@ Kursach_OOP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/build
 .PHONY : Kursach_OOP/fast
 
-Classes/Enums/TaskState.obj: Classes/Enums/TaskState.cpp.obj
-.PHONY : Classes/Enums/TaskState.obj
-
-# target to build an object file
-Classes/Enums/TaskState.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj
-.PHONY : Classes/Enums/TaskState.cpp.obj
-
-Classes/Enums/TaskState.i: Classes/Enums/TaskState.cpp.i
-.PHONY : Classes/Enums/TaskState.i
-
-# target to preprocess a source file
-Classes/Enums/TaskState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.i
-.PHONY : Classes/Enums/TaskState.cpp.i
-
-Classes/Enums/TaskState.s: Classes/Enums/TaskState.cpp.s
-.PHONY : Classes/Enums/TaskState.s
-
-# target to generate assembly for a file
-Classes/Enums/TaskState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.s
-.PHONY : Classes/Enums/TaskState.cpp.s
-
 Classes/Managers/EmployerManager.obj: Classes/Managers/EmployerManager.cpp.obj
 .PHONY : Classes/Managers/EmployerManager.obj
 
@@ -175,6 +151,30 @@ Classes/Managers/EmployerManager.s: Classes/Managers/EmployerManager.cpp.s
 Classes/Managers/EmployerManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.s
 .PHONY : Classes/Managers/EmployerManager.cpp.s
+
+Classes/Managers/FileWriter.obj: Classes/Managers/FileWriter.cpp.obj
+.PHONY : Classes/Managers/FileWriter.obj
+
+# target to build an object file
+Classes/Managers/FileWriter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.obj
+.PHONY : Classes/Managers/FileWriter.cpp.obj
+
+Classes/Managers/FileWriter.i: Classes/Managers/FileWriter.cpp.i
+.PHONY : Classes/Managers/FileWriter.i
+
+# target to preprocess a source file
+Classes/Managers/FileWriter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.i
+.PHONY : Classes/Managers/FileWriter.cpp.i
+
+Classes/Managers/FileWriter.s: Classes/Managers/FileWriter.cpp.s
+.PHONY : Classes/Managers/FileWriter.s
+
+# target to generate assembly for a file
+Classes/Managers/FileWriter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.s
+.PHONY : Classes/Managers/FileWriter.cpp.s
 
 Classes/Managers/Labor.obj: Classes/Managers/Labor.cpp.obj
 .PHONY : Classes/Managers/Labor.obj
@@ -296,30 +296,6 @@ Classes/Speciefic/AdminMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.s
 .PHONY : Classes/Speciefic/AdminMenu.cpp.s
 
-Classes/Speciefic/Task.obj: Classes/Speciefic/Task.cpp.obj
-.PHONY : Classes/Speciefic/Task.obj
-
-# target to build an object file
-Classes/Speciefic/Task.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj
-.PHONY : Classes/Speciefic/Task.cpp.obj
-
-Classes/Speciefic/Task.i: Classes/Speciefic/Task.cpp.i
-.PHONY : Classes/Speciefic/Task.i
-
-# target to preprocess a source file
-Classes/Speciefic/Task.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.i
-.PHONY : Classes/Speciefic/Task.cpp.i
-
-Classes/Speciefic/Task.s: Classes/Speciefic/Task.cpp.s
-.PHONY : Classes/Speciefic/Task.s
-
-# target to generate assembly for a file
-Classes/Speciefic/Task.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.s
-.PHONY : Classes/Speciefic/Task.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -353,12 +329,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Kursach_OOP
-	@echo ... Classes/Enums/TaskState.obj
-	@echo ... Classes/Enums/TaskState.i
-	@echo ... Classes/Enums/TaskState.s
 	@echo ... Classes/Managers/EmployerManager.obj
 	@echo ... Classes/Managers/EmployerManager.i
 	@echo ... Classes/Managers/EmployerManager.s
+	@echo ... Classes/Managers/FileWriter.obj
+	@echo ... Classes/Managers/FileWriter.i
+	@echo ... Classes/Managers/FileWriter.s
 	@echo ... Classes/Managers/Labor.obj
 	@echo ... Classes/Managers/Labor.i
 	@echo ... Classes/Managers/Labor.s
@@ -374,9 +350,6 @@ help:
 	@echo ... Classes/Speciefic/AdminMenu.obj
 	@echo ... Classes/Speciefic/AdminMenu.i
 	@echo ... Classes/Speciefic/AdminMenu.s
-	@echo ... Classes/Speciefic/Task.obj
-	@echo ... Classes/Speciefic/Task.i
-	@echo ... Classes/Speciefic/Task.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

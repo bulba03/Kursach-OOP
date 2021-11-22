@@ -4,6 +4,6 @@
 
 #include "Labor.h"
 
-vector<Worker> Labor::GetAvaliableWorkers() {
+std::vector<Worker> Labor::GetAvaliableWorkers() {
     return avaliableWorkers;
 }

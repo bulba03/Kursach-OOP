@@ -6,23 +6,22 @@
 #define KURSACH_OOP_WORKER_H
 
 #include <vector>
-#include "../Speciefic/Task.h"
 #include "Person.h"
+#include "../Enums/WorkType.h"
 
 class Worker : public Person {
+private:
+    WorkType workType;
     public:
-        vector<Task> tasks;
-        Worker();
-
+        Worker(int _age, int _salary, std::string _name,WorkType type);
         void ShowInfo() override;
-
         int GetAge() override;
-
         int GetSalary() override;
+        void SetInfo(int _age, int _salary, std::string _name, WorkType _type);
+        std::string GetName() override;
+        WorkType GetWorkType();
+        WorkType SetWorkType(WorkType type);
 
-        string GetName() override;
-
-        Task *GetActiveTasks();
-        vector<Task> GetAllTasks();
+    Worker();
 };
 #endif //KURSACH_OOP_WORKER_H

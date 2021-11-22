@@ -1,13 +1,16 @@
-#include <iostream>
 #include "windows.h"
 #include "Classes/Speciefic/AdminMenu.h"
-int main() {
+#include "Classes/Managers/FileWriter.h"
 
+int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     Worker a = Worker();
-    auto v =Singleton<EmployerManager>::getInstance().GetWorkersList();
-    v.at(0).ShowInfo();
-    cout<<v.at(0).GetAllTasks().size();
-    Singleton<AdminMenu>::getInstance().ShowWorkers();
+    a.SetInfo(500, 23040,"ABOBA", WorkType::Programmer);
+    Singleton<FileWriter>::getInstance().SaveWorker(a);
+    Singleton<FileWriter>::getInstance().LoadWorkers();
+    auto b=Singleton<EmployerManager>::getInstance().GetWorkersList();
+    cout<<b[0].GetName();
+    cout<<b[1].GetName();
+
 }

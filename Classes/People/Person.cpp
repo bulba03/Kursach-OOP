@@ -5,8 +5,10 @@
 #include <iostream>
 #include "Person.h"
 #include "string"
+#include "../Enums/WorkType.h"
+
 using namespace std;
-    void Person::SetInfo(int _age, char *_name, int _salary) {
+    void Person::SetInfo(int _age, std::string _name, int _salary) {
         age = _age;
         name = _name;
         salary = _salary;

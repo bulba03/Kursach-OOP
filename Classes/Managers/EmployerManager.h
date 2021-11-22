@@ -11,8 +11,8 @@
 class EmployerManager: public Singleton<EmployerManager>{
 public: std::vector<Worker> workers;
      std::vector<Worker> GetWorkersList();
-    void AddWorker(Worker worker);
-    std::vector<Worker> GetFreeWorkers();
+     void AddWorker(Worker worker);
+
 };
 
 

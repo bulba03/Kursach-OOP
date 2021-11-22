@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\bulba\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\bulba\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -104,35 +104,9 @@ CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.s"
 	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Work\Kursach-OOP\Classes\People\Worker.cpp -o CMakeFiles\Kursach_OOP.dir\Classes\People\Worker.cpp.s
 
-CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj: CMakeFiles/Kursach_OOP.dir/flags.make
-CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj: ../Classes/Speciefic/Task.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Kursach_OOP.dir\Classes\Speciefic\Task.cpp.obj -c D:\Work\Kursach-OOP\Classes\Speciefic\Task.cpp
-
-CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.i"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Work\Kursach-OOP\Classes\Speciefic\Task.cpp > CMakeFiles\Kursach_OOP.dir\Classes\Speciefic\Task.cpp.i
-
-CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.s"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Work\Kursach-OOP\Classes\Speciefic\Task.cpp -o CMakeFiles\Kursach_OOP.dir\Classes\Speciefic\Task.cpp.s
-
-CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj: CMakeFiles/Kursach_OOP.dir/flags.make
-CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj: ../Classes/Enums/TaskState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Kursach_OOP.dir\Classes\Enums\TaskState.cpp.obj -c D:\Work\Kursach-OOP\Classes\Enums\TaskState.cpp
-
-CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.i"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Work\Kursach-OOP\Classes\Enums\TaskState.cpp > CMakeFiles\Kursach_OOP.dir\Classes\Enums\TaskState.cpp.i
-
-CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.s"
-	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Work\Kursach-OOP\Classes\Enums\TaskState.cpp -o CMakeFiles\Kursach_OOP.dir\Classes\Enums\TaskState.cpp.s
-
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj: CMakeFiles/Kursach_OOP.dir/flags.make
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj: ../Classes/Managers/EmployerManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj"
 	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Kursach_OOP.dir\Classes\Managers\EmployerManager.cpp.obj -c D:\Work\Kursach-OOP\Classes\Managers\EmployerManager.cpp
 
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.i: cmake_force
@@ -145,7 +119,7 @@ CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.s: cmake_force
 
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj: CMakeFiles/Kursach_OOP.dir/flags.make
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj: ../Classes/Managers/Singleton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj"
 	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Kursach_OOP.dir\Classes\Managers\Singleton.cpp.obj -c D:\Work\Kursach-OOP\Classes\Managers\Singleton.cpp
 
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.i: cmake_force
@@ -158,7 +132,7 @@ CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.s: cmake_force
 
 CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj: CMakeFiles/Kursach_OOP.dir/flags.make
 CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj: ../Classes/Speciefic/AdminMenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj"
 	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Kursach_OOP.dir\Classes\Speciefic\AdminMenu.cpp.obj -c D:\Work\Kursach-OOP\Classes\Speciefic\AdminMenu.cpp
 
 CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.i: cmake_force
@@ -171,7 +145,7 @@ CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.s: cmake_force
 
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj: CMakeFiles/Kursach_OOP.dir/flags.make
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj: ../Classes/Managers/Labor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj"
 	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Kursach_OOP.dir\Classes\Managers\Labor.cpp.obj -c D:\Work\Kursach-OOP\Classes\Managers\Labor.cpp
 
 CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.i: cmake_force
@@ -182,17 +156,29 @@ CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.s"
 	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Work\Kursach-OOP\Classes\Managers\Labor.cpp -o CMakeFiles\Kursach_OOP.dir\Classes\Managers\Labor.cpp.s
 
+CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.obj: CMakeFiles/Kursach_OOP.dir/flags.make
+CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.obj: ../Classes/Managers/FileWriter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.obj"
+	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Kursach_OOP.dir\Classes\Managers\FileWriter.cpp.obj -c D:\Work\Kursach-OOP\Classes\Managers\FileWriter.cpp
+
+CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.i"
+	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Work\Kursach-OOP\Classes\Managers\FileWriter.cpp > CMakeFiles\Kursach_OOP.dir\Classes\Managers\FileWriter.cpp.i
+
+CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.s"
+	D:\mingw\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Work\Kursach-OOP\Classes\Managers\FileWriter.cpp -o CMakeFiles\Kursach_OOP.dir\Classes\Managers\FileWriter.cpp.s
+
 # Object files for target Kursach_OOP
 Kursach_OOP_OBJECTS = \
 "CMakeFiles/Kursach_OOP.dir/main.cpp.obj" \
 "CMakeFiles/Kursach_OOP.dir/Classes/People/Person.cpp.obj" \
 "CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj" \
-"CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj" \
-"CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj" \
 "CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj" \
 "CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj" \
 "CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj" \
-"CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj"
+"CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj" \
+"CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.obj"
 
 # External object files for target Kursach_OOP
 Kursach_OOP_EXTERNAL_OBJECTS =
@@ -200,17 +186,16 @@ Kursach_OOP_EXTERNAL_OBJECTS =
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/main.cpp.obj
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/Classes/People/Person.cpp.obj
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj
-Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj
-Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj
+Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.obj
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/build.make
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/linklibs.rsp
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/objects1.rsp
 Kursach_OOP.exe: CMakeFiles/Kursach_OOP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Kursach_OOP.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Work\Kursach-OOP\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Kursach_OOP.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Kursach_OOP.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -8,8 +8,8 @@
 #include "../People/Worker.h"
 
 class Labor: Singleton<Labor> {
-private: vector<Worker> avaliableWorkers;
-public:vector<Worker> GetAvaliableWorkers();
+private: std::vector<Worker> avaliableWorkers;
+public:std::vector<Worker> GetAvaliableWorkers();
 };
 
 

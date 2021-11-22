@@ -19,6 +19,7 @@ public:
             cout << "2) Нанять рабочего" << endl;
             cout << "3) Уволить рабочего" << endl;
             cout << "4) Поиск работника" << endl;
+
             cin >> choise;
             switch (choise) {
                 case 1:

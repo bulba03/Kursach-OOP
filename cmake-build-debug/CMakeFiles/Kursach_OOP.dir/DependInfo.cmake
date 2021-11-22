@@ -8,14 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Work/Kursach-OOP/Classes/Enums/TaskState.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Enums/TaskState.cpp.obj"
   "D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj"
+  "D:/Work/Kursach-OOP/Classes/Managers/FileWriter.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.obj"
   "D:/Work/Kursach-OOP/Classes/Managers/Labor.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj"
   "D:/Work/Kursach-OOP/Classes/Managers/Singleton.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj"
   "D:/Work/Kursach-OOP/Classes/People/Person.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/People/Person.cpp.obj"
   "D:/Work/Kursach-OOP/Classes/People/Worker.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj"
   "D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/Speciefic/Task.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Task.cpp.obj"
   "D:/Work/Kursach-OOP/main.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

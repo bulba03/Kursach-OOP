@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-D:/Work/Kursach-OOP/Classes/Enums/TaskState.h
+D:/Work/Kursach-OOP/Classes/Enums/WorkType.h
 
 D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.h
 vector
@@ -16,27 +16,37 @@ D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
 ../People/Worker.h
 D:/Work/Kursach-OOP/Classes/People/Worker.h
 
+D:/Work/Kursach-OOP/Classes/Managers/FileWriter.h
+Singleton.h
+D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
+../People/Worker.h
+D:/Work/Kursach-OOP/Classes/People/Worker.h
+EmployerManager.h
+D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.h
+vector
+-
+sstream
+-
+fstream
+-
+
 D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
 string
 -
 
 D:/Work/Kursach-OOP/Classes/People/Person.h
-Person.h
-D:/Work/Kursach-OOP/Classes/People/Person.h
 string
 D:/Work/Kursach-OOP/Classes/People/string
+../Enums/WorkType.h
+D:/Work/Kursach-OOP/Classes/Enums/WorkType.h
 
 D:/Work/Kursach-OOP/Classes/People/Worker.h
 vector
 -
-../Speciefic/Task.h
-D:/Work/Kursach-OOP/Classes/Speciefic/Task.h
 Person.h
 D:/Work/Kursach-OOP/Classes/People/Person.h
-
-D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.cpp
-AdminMenu.h
-D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.h
+../Enums/WorkType.h
+D:/Work/Kursach-OOP/Classes/Enums/WorkType.h
 
 D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.h
 ../Managers/EmployerManager.h
@@ -46,17 +56,11 @@ iostream
 iomanip
 -
 
-D:/Work/Kursach-OOP/Classes/Speciefic/Task.h
-iostream
--
-../Enums/TaskState.h
-D:/Work/Kursach-OOP/Classes/Enums/TaskState.h
-
 D:/Work/Kursach-OOP/main.cpp
-iostream
--
 windows.h
 D:/Work/Kursach-OOP/windows.h
 Classes/Speciefic/AdminMenu.h
 D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.h
+Classes/Managers/FileWriter.h
+D:/Work/Kursach-OOP/Classes/Managers/FileWriter.h
 

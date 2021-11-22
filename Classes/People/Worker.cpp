@@ -6,24 +6,8 @@
 #include "../Managers/Singleton.h"
 #include "../Managers/EmployerManager.h"
 
-Task *Worker::GetActiveTasks() {
-        for (int i = 0; i < tasks.size(); i++) {
-            if (tasks.at(i).state == TaskState::Active) {
-                return &tasks.at(i);
-            }
-        }
-        return nullptr;
-    }
-
     void Worker::ShowInfo() {
         Person::ShowInfo();
-        auto b = GetActiveTasks();
-        if (b != nullptr) {
-            cout << "Active Task: " << b->taskTitle << endl;
-            cout << "Task discription:" << b->taskDiscription << endl;
-        } else {
-            cout << name << " Net activnix zadach" << endl;
-        }
     }
 
     int Worker::GetAge() {
@@ -34,20 +18,39 @@ Task *Worker::GetActiveTasks() {
         return Person::GetSalary();
     }
 
-    string Worker::GetName() {
+    std::string Worker::GetName() {
         return Person::GetName();
     }
 
-Worker::Worker() {
-        age = 10;
-        name = "ASAS";
-        salary = 10;
-        auto task = Task();
-        tasks.push_back(task);
+Worker::Worker(int _age, int _salary, std::string _name,WorkType type) {
+        age = _age;
+        name = _name;
+        salary = _salary;
+        workType = type;
         Singleton<EmployerManager>::getInstance().AddWorker(*this);
 
 }
 
-vector<Task> Worker::GetAllTasks() {
-    return tasks;
+WorkType Worker::GetWorkType() {
+    return workType;
 }
+
+WorkType Worker::SetWorkType(WorkType type) {
+    workType=type;
+}
+
+Worker::Worker() {
+    age=0;
+    name="null";
+    salary=0;
+}
+
+void Worker::SetInfo(int _age, int _salary, std::string _name, WorkType _type) {
+    age= _age;
+    salary=_salary;
+    name = _name;
+    workType =_type;
+
+}
+
+
