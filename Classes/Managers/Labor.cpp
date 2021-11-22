@@ -4,6 +4,14 @@
 
 #include "Labor.h"
 
-std::vector<Worker> Labor::GetAvaliableWorkers() {
+std::vector<AvaliableWorker> Labor::GetAvaliableWorkers() {
     return avaliableWorkers;
+}
+
+void Labor::Hire(AvaliableWorker avaliableWorker) {
+
+}
+
+void Labor::AddAvaliableWorker(AvaliableWorker avWorker) {
+    avaliableWorkers.push_back(avWorker);
 }

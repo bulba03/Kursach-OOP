@@ -5,8 +5,9 @@
 #include "Worker.h"
 #include "../Managers/Singleton.h"
 #include "../Managers/EmployerManager.h"
+#include "AvaliableWorker.h"
 
-    void Worker::ShowInfo() {
+void Worker::ShowInfo() {
         Person::ShowInfo();
     }
 
@@ -52,5 +53,13 @@ void Worker::SetInfo(int _age, int _salary, std::string _name, WorkType _type) {
     workType =_type;
 
 }
+/*
+Worker::Worker(AvaliableWorker avaliableWorker) {
+    age = avaliableWorker.GetAge();
+    salary = avaliableWorker.GetSalary();
+    name = avaliableWorker.GetName();
+    workType = avaliableWorker.GetType();
+    */
+
 
 

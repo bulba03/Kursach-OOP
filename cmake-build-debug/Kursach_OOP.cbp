@@ -107,6 +107,12 @@
 		<Unit filename="D:/Work/Kursach-OOP/Classes/Managers/Singleton.h">
 			<Option target="Kursach_OOP"/>
 		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/People/AvaliableWorker.cpp">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/People/AvaliableWorker.h">
+			<Option target="Kursach_OOP"/>
+		</Unit>
 		<Unit filename="D:/Work/Kursach-OOP/Classes/People/Person.cpp">
 			<Option target="Kursach_OOP"/>
 		</Unit>
@@ -123,6 +129,18 @@
 			<Option target="Kursach_OOP"/>
 		</Unit>
 		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.h">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.cpp">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.h">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/Menu.cpp">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/Menu.h">
 			<Option target="Kursach_OOP"/>
 		</Unit>
 		<Unit filename="D:/Work/Kursach-OOP/main.cpp">

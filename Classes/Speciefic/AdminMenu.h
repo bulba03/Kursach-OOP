@@ -5,6 +5,7 @@
 #ifndef KURSACH_OOP_ADMINMENU_H
 #define KURSACH_OOP_ADMINMENU_H
 #include "../Managers/EmployerManager.h"
+#include "../Managers/Labor.h"
 
 using namespace std;
 #include <iostream>
@@ -24,6 +25,9 @@ public:
             switch (choise) {
                 case 1:
                     ShowWorkers();
+                    break;
+                case 2:
+                    auto list =Singleton<Labor>::getInstance().GetAvaliableWorkers();
             }
         }
 
@@ -36,6 +40,10 @@ public:
         {
             cout<<right<<i<<setw(5)<<workers[i].GetName()<<setw(20)<<workers[i].GetAge()<<setw(5)<<workers[i].GetSalary()<<endl;
         }
+    }
+    void ShowLabor(vector<AvaliableWorker> avaliableWorkers)
+    {
+
     }
 };
 

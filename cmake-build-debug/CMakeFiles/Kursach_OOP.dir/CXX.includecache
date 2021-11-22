@@ -23,6 +23,10 @@ D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
 D:/Work/Kursach-OOP/Classes/People/Worker.h
 EmployerManager.h
 D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.h
+../Speciefic/LoginData.h
+D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.h
+../People/AvaliableWorker.h
+D:/Work/Kursach-OOP/Classes/People/AvaliableWorker.h
 vector
 -
 sstream
@@ -33,6 +37,10 @@ fstream
 D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
 string
 -
+
+D:/Work/Kursach-OOP/Classes/People/AvaliableWorker.h
+Worker.h
+D:/Work/Kursach-OOP/Classes/People/Worker.h
 
 D:/Work/Kursach-OOP/Classes/People/Person.h
 string
@@ -48,19 +56,27 @@ D:/Work/Kursach-OOP/Classes/People/Person.h
 ../Enums/WorkType.h
 D:/Work/Kursach-OOP/Classes/Enums/WorkType.h
 
-D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.h
-../Managers/EmployerManager.h
-D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.h
+D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.h
+string
+-
+
+D:/Work/Kursach-OOP/Classes/Speciefic/Menu.cpp
+Menu.h
+D:/Work/Kursach-OOP/Classes/Speciefic/Menu.h
+
+D:/Work/Kursach-OOP/Classes/Speciefic/Menu.h
 iostream
 -
-iomanip
--
+../Managers/Singleton.h
+D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
+LoginData.h
+D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.h
+../Managers/FileWriter.h
+D:/Work/Kursach-OOP/Classes/Managers/FileWriter.h
 
 D:/Work/Kursach-OOP/main.cpp
 windows.h
 D:/Work/Kursach-OOP/windows.h
-Classes/Speciefic/AdminMenu.h
-D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.h
-Classes/Managers/FileWriter.h
-D:/Work/Kursach-OOP/Classes/Managers/FileWriter.h
+Classes/Speciefic/Menu.h
+D:/Work/Kursach-OOP/Classes/Speciefic/Menu.h
 

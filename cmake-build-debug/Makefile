@@ -224,6 +224,30 @@ Classes/Managers/Singleton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.s
 .PHONY : Classes/Managers/Singleton.cpp.s
 
+Classes/People/AvaliableWorker.obj: Classes/People/AvaliableWorker.cpp.obj
+.PHONY : Classes/People/AvaliableWorker.obj
+
+# target to build an object file
+Classes/People/AvaliableWorker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/AvaliableWorker.cpp.obj
+.PHONY : Classes/People/AvaliableWorker.cpp.obj
+
+Classes/People/AvaliableWorker.i: Classes/People/AvaliableWorker.cpp.i
+.PHONY : Classes/People/AvaliableWorker.i
+
+# target to preprocess a source file
+Classes/People/AvaliableWorker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/AvaliableWorker.cpp.i
+.PHONY : Classes/People/AvaliableWorker.cpp.i
+
+Classes/People/AvaliableWorker.s: Classes/People/AvaliableWorker.cpp.s
+.PHONY : Classes/People/AvaliableWorker.s
+
+# target to generate assembly for a file
+Classes/People/AvaliableWorker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/People/AvaliableWorker.cpp.s
+.PHONY : Classes/People/AvaliableWorker.cpp.s
+
 Classes/People/Person.obj: Classes/People/Person.cpp.obj
 .PHONY : Classes/People/Person.obj
 
@@ -296,6 +320,54 @@ Classes/Speciefic/AdminMenu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.s
 .PHONY : Classes/Speciefic/AdminMenu.cpp.s
 
+Classes/Speciefic/LoginData.obj: Classes/Speciefic/LoginData.cpp.obj
+.PHONY : Classes/Speciefic/LoginData.obj
+
+# target to build an object file
+Classes/Speciefic/LoginData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/LoginData.cpp.obj
+.PHONY : Classes/Speciefic/LoginData.cpp.obj
+
+Classes/Speciefic/LoginData.i: Classes/Speciefic/LoginData.cpp.i
+.PHONY : Classes/Speciefic/LoginData.i
+
+# target to preprocess a source file
+Classes/Speciefic/LoginData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/LoginData.cpp.i
+.PHONY : Classes/Speciefic/LoginData.cpp.i
+
+Classes/Speciefic/LoginData.s: Classes/Speciefic/LoginData.cpp.s
+.PHONY : Classes/Speciefic/LoginData.s
+
+# target to generate assembly for a file
+Classes/Speciefic/LoginData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/LoginData.cpp.s
+.PHONY : Classes/Speciefic/LoginData.cpp.s
+
+Classes/Speciefic/Menu.obj: Classes/Speciefic/Menu.cpp.obj
+.PHONY : Classes/Speciefic/Menu.obj
+
+# target to build an object file
+Classes/Speciefic/Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Menu.cpp.obj
+.PHONY : Classes/Speciefic/Menu.cpp.obj
+
+Classes/Speciefic/Menu.i: Classes/Speciefic/Menu.cpp.i
+.PHONY : Classes/Speciefic/Menu.i
+
+# target to preprocess a source file
+Classes/Speciefic/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Menu.cpp.i
+.PHONY : Classes/Speciefic/Menu.cpp.i
+
+Classes/Speciefic/Menu.s: Classes/Speciefic/Menu.cpp.s
+.PHONY : Classes/Speciefic/Menu.s
+
+# target to generate assembly for a file
+Classes/Speciefic/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Menu.cpp.s
+.PHONY : Classes/Speciefic/Menu.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -341,6 +413,9 @@ help:
 	@echo ... Classes/Managers/Singleton.obj
 	@echo ... Classes/Managers/Singleton.i
 	@echo ... Classes/Managers/Singleton.s
+	@echo ... Classes/People/AvaliableWorker.obj
+	@echo ... Classes/People/AvaliableWorker.i
+	@echo ... Classes/People/AvaliableWorker.s
 	@echo ... Classes/People/Person.obj
 	@echo ... Classes/People/Person.i
 	@echo ... Classes/People/Person.s
@@ -350,6 +425,12 @@ help:
 	@echo ... Classes/Speciefic/AdminMenu.obj
 	@echo ... Classes/Speciefic/AdminMenu.i
 	@echo ... Classes/Speciefic/AdminMenu.s
+	@echo ... Classes/Speciefic/LoginData.obj
+	@echo ... Classes/Speciefic/LoginData.i
+	@echo ... Classes/Speciefic/LoginData.s
+	@echo ... Classes/Speciefic/Menu.obj
+	@echo ... Classes/Speciefic/Menu.i
+	@echo ... Classes/Speciefic/Menu.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

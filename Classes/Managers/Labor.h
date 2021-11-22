@@ -6,10 +6,15 @@
 #define KURSACH_OOP_LABOR_H
 #include "Singleton.h"
 #include "../People/Worker.h"
+#include "../People/AvaliableWorker.h"
 
 class Labor: Singleton<Labor> {
-private: std::vector<Worker> avaliableWorkers;
-public:std::vector<Worker> GetAvaliableWorkers();
+private: std::vector<AvaliableWorker> avaliableWorkers;
+public:std::vector<AvaliableWorker> GetAvaliableWorkers();
+        void AddAvaliableWorker(Worker worker);
+        void Hire(AvaliableWorker avaliableWorker);
+
+    void AddAvaliableWorker(AvaliableWorker avWorker);
 };
 
 
