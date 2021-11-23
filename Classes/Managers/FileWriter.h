@@ -9,25 +9,45 @@
 #include "EmployerManager.h"
 #include "../Speciefic/LoginData.h"
 #include "../People/AvaliableWorker.h"
+#include "Labor.h"
 #include <vector>
 #include <sstream>
 #include <fstream>
+#include <iostream>
+
 #define ENG 26
 #define RUS 32
 #define COUNT 10
 class FileWriter: Singleton<FileWriter> {
 
-public: void SaveWorker(Worker worker)
+public: void SaveWorker(std::vector<Worker> worker)
     {
         std::ofstream file;
-        file.open("Workers.txt",std::ios::app);
+        file.open("Workers.txt");
         if(file.is_open())
         {
-            file<<worker.GetName()<<" "<<worker.GetAge()<<" "<<worker.GetSalary()<<" "<<enum_str[(int)worker.GetWorkType()]<<std::endl;
+            for(int i=0;i<worker.size();i++)
+            {
+            file<<worker[i].GetName()<<" "<<worker[i].GetAge()<<" "<<worker[i].GetSalary()<<" "<<enum_str[(int)worker[i].GetWorkType()]<<std::endl;
+            }
         }
+        file.close();
+    }
+    void ClearLabor()
+    {
+        std::ofstream file;
+        file.open("Labor.txt");
+        file.close();
+    }
+    void ClearWorkers()
+    {
+        std::ofstream file;
+        file.open("Workers.txt");
+        file.close();
     }
     void LoadWorkers()
     {
+        Singleton<EmployerManager>::getInstance().workers.clear();
         std::ifstream file;
         file.open("Workers.txt");
         std::string name;
@@ -41,11 +61,11 @@ public: void SaveWorker(Worker worker)
             while(file>>name>>age>>salary>>type)
             {
                 Worker worker = Worker();
-                for(int i=0;i<5;i++)
+                for(int i=0;i<4;i++)
                 {
                     if(type == enum_str[i])
                     {
-                        type1=static_cast<WorkType>(i);
+                        type1=(WorkType)i;
                         break;
                     }
                 }
@@ -53,6 +73,7 @@ public: void SaveWorker(Worker worker)
                 Singleton<EmployerManager>::getInstance().AddWorker(worker);
             }
         }
+        file.close();
     }
     bool LoadAdminLogPass(LoginData logData)
     {
@@ -65,10 +86,12 @@ public: void SaveWorker(Worker worker)
             {
                 if(encryption(log) == logData.login && encryption(pass) == logData.pass)
                 {
+                    file.close();
                     return true;
                 }
             }
         }
+        file.close();
         return false;
     }
     void SaveAdminLogPass(LoginData logData)
@@ -81,6 +104,7 @@ public: void SaveWorker(Worker worker)
         {
             file<<log<<" "<< pass<<std::endl;
         }
+        file.close();
     }
     void SaveManagerLogPass(LoginData logData)
     {
@@ -92,11 +116,12 @@ public: void SaveWorker(Worker worker)
         {
             file<<log<<" "<< pass<<std::endl;
         }
+        file.close();
     }
     bool LoadManagerLogPass(LoginData logData)
     {
         std::ifstream file;
-        file.open("ManagerLogsPass.txt", std::ios::app);
+        file.open("ManagerLogsPass.txt");
         if(file.is_open())
         {
             std::string log,pass;
@@ -104,21 +129,54 @@ public: void SaveWorker(Worker worker)
             {
                 if(encryption(log)==logData.login && encryption(pass)==logData.pass)
                 {
+                    file.close();
                     return true;
                 }
             }
         }
+        file.close();
         return false;
     }
-    void AddLaborMember(AvaliableWorker avaliableWorker)
+    void SaveLabor(std::vector<AvaliableWorker> avaliableWorkers)
     {
         std::ofstream file;
-        file.open("Labor.txt",std::ios::app);
+        file.open("Labor.txt");
         if(file.is_open())
         {
-            file<<avaliableWorker.GetName()<<" "<< avaliableWorker.GetAge()<<" "<<
-            avaliableWorker.GetSalary()<<" "<<enum_str[(int)avaliableWorker.GetType()]<<" "<<avaliableWorker.GetYearsOfWork()<<std::endl;
+            for(int i =0; i < avaliableWorkers.size(); i++)
+            {
+            file << avaliableWorkers[i].GetName() << " " << avaliableWorkers[i].GetAge() << " " <<
+                 avaliableWorkers[i].GetSalary() << " " << enum_str[(int)avaliableWorkers[i].GetType()] << " " << avaliableWorkers[i].GetYearsOfWork() << std::endl;
+            }
         }
+        file.close();
+    }
+    void LoadLabor()
+    {
+        Singleton<Labor>::getInstance().avaliableWorkers.clear();
+        std:: ifstream file;
+        file.open("Labor.txt");
+        if(file.is_open())
+        {
+            int age,salary,yearsOfWork;
+            WorkType type1;;
+            std::string fio,type;
+            while(file>>fio>>age>>salary>>type>>yearsOfWork)
+            {
+                AvaliableWorker avW = AvaliableWorker();
+                for(int i=0;i<4;i++)
+                {
+                    if(type == enum_str[i])
+                    {
+                        type1=(WorkType)i;
+                        break;
+                    }
+                }
+                avW.SetInfo(age,fio,salary,yearsOfWork,type1);
+                Singleton<Labor>::getInstance().avaliableWorkers.push_back(avW);
+            }
+        }
+        file.close();
     }
     std::string encryption(std::string str)
     {

@@ -9,12 +9,11 @@
 #include "../People/AvaliableWorker.h"
 
 class Labor: Singleton<Labor> {
-private: std::vector<AvaliableWorker> avaliableWorkers;
-public:std::vector<AvaliableWorker> GetAvaliableWorkers();
-        void AddAvaliableWorker(Worker worker);
+private:
+public:std::vector<AvaliableWorker> avaliableWorkers;
+    std::vector<AvaliableWorker> GetAvaliableWorkers();
         void Hire(AvaliableWorker avaliableWorker);
-
-    void AddAvaliableWorker(AvaliableWorker avWorker);
+        void AddAvaliableWorker(AvaliableWorker avWorker);
 };
 
 

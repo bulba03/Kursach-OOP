@@ -14,7 +14,7 @@ enum class WorkType {
     Business_Analytic
 };
 static const char *enum_str[] =
-        { "Дизайнер", "Програмист", "ПМ", "Тех. художник","Бизнес-Аналитик"};
+        { "Дизайнер", "Програмист", "ПМ", "Тех.Художник","Биз.Аналитик"};
 
 
 #endif //KURSACH_OOP_WORKTYPE_H

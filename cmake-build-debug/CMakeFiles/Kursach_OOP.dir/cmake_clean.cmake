@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj"
   "CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj"
   "CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/LoginData.cpp.obj"
+  "CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/ManagerMenu.cpp.obj"
   "CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Menu.cpp.obj"
   "CMakeFiles/Kursach_OOP.dir/main.cpp.obj"
   "Kursach_OOP.exe"

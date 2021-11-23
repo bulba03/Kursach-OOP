@@ -344,6 +344,30 @@ Classes/Speciefic/LoginData.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/LoginData.cpp.s
 .PHONY : Classes/Speciefic/LoginData.cpp.s
 
+Classes/Speciefic/ManagerMenu.obj: Classes/Speciefic/ManagerMenu.cpp.obj
+.PHONY : Classes/Speciefic/ManagerMenu.obj
+
+# target to build an object file
+Classes/Speciefic/ManagerMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/ManagerMenu.cpp.obj
+.PHONY : Classes/Speciefic/ManagerMenu.cpp.obj
+
+Classes/Speciefic/ManagerMenu.i: Classes/Speciefic/ManagerMenu.cpp.i
+.PHONY : Classes/Speciefic/ManagerMenu.i
+
+# target to preprocess a source file
+Classes/Speciefic/ManagerMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/ManagerMenu.cpp.i
+.PHONY : Classes/Speciefic/ManagerMenu.cpp.i
+
+Classes/Speciefic/ManagerMenu.s: Classes/Speciefic/ManagerMenu.cpp.s
+.PHONY : Classes/Speciefic/ManagerMenu.s
+
+# target to generate assembly for a file
+Classes/Speciefic/ManagerMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Kursach_OOP.dir\build.make CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/ManagerMenu.cpp.s
+.PHONY : Classes/Speciefic/ManagerMenu.cpp.s
+
 Classes/Speciefic/Menu.obj: Classes/Speciefic/Menu.cpp.obj
 .PHONY : Classes/Speciefic/Menu.obj
 
@@ -428,6 +452,9 @@ help:
 	@echo ... Classes/Speciefic/LoginData.obj
 	@echo ... Classes/Speciefic/LoginData.i
 	@echo ... Classes/Speciefic/LoginData.s
+	@echo ... Classes/Speciefic/ManagerMenu.obj
+	@echo ... Classes/Speciefic/ManagerMenu.i
+	@echo ... Classes/Speciefic/ManagerMenu.s
 	@echo ... Classes/Speciefic/Menu.obj
 	@echo ... Classes/Speciefic/Menu.i
 	@echo ... Classes/Speciefic/Menu.s

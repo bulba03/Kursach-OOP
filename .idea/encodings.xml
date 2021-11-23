@@ -2,11 +2,14 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Classes/Enums/WorkType.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Classes/Managers/EmployerManager.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Classes/Managers/FileWriter.h" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Classes/People/Worker.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Classes/People/Worker.h" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Classes/Speciefic/AdminMenu.cpp" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/Classes/Speciefic/AdminMenu.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Classes/Speciefic/ManagerMenu.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Classes/Speciefic/ManagerMenu.h" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/Classes/Speciefic/Menu.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Classes/Speciefic/Menu.h" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/Classes/Speciefic/Task.h" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/main.cpp" charset="windows-1251" />

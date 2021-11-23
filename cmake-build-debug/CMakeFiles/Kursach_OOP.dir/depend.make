@@ -13,6 +13,7 @@ CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.obj: \
  ../Classes/Managers/EmployerManager.h \
  ../Classes/Managers/FileWriter.cpp \
  ../Classes/Managers/FileWriter.h \
+ ../Classes/Managers/Labor.h \
  ../Classes/Managers/Singleton.h \
  ../Classes/People/AvaliableWorker.h \
  ../Classes/People/Person.h \
@@ -50,31 +51,48 @@ CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj: \
 CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj: \
  ../Classes/Enums/WorkType.h \
  ../Classes/Managers/EmployerManager.h \
+ ../Classes/Managers/FileWriter.h \
  ../Classes/Managers/Labor.h \
  ../Classes/Managers/Singleton.h \
  ../Classes/People/AvaliableWorker.h \
  ../Classes/People/Person.h \
  ../Classes/People/Worker.h \
  ../Classes/Speciefic/AdminMenu.cpp \
- ../Classes/Speciefic/AdminMenu.h
+ ../Classes/Speciefic/AdminMenu.h \
+ ../Classes/Speciefic/LoginData.h \
+ ../Classes/Speciefic/Menu.h
 CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/LoginData.cpp.obj: \
  ../Classes/Speciefic/LoginData.cpp \
  ../Classes/Speciefic/LoginData.h
-CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Menu.cpp.obj: \
+CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/ManagerMenu.cpp.obj: \
  ../Classes/Enums/WorkType.h \
  ../Classes/Managers/EmployerManager.h \
  ../Classes/Managers/FileWriter.h \
+ ../Classes/Managers/Labor.h \
  ../Classes/Managers/Singleton.h \
  ../Classes/People/AvaliableWorker.h \
  ../Classes/People/Person.h \
  ../Classes/People/Worker.h \
  ../Classes/Speciefic/LoginData.h \
+ ../Classes/Speciefic/ManagerMenu.cpp \
+ ../Classes/Speciefic/ManagerMenu.h \
+ ../Classes/Speciefic/Menu.h
+CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Menu.cpp.obj: \
+ ../Classes/Enums/WorkType.h \
+ ../Classes/Managers/EmployerManager.h \
+ ../Classes/Managers/FileWriter.h \
+ ../Classes/Managers/Labor.h \
+ ../Classes/Managers/Singleton.h \
+ ../Classes/People/AvaliableWorker.h \
+ ../Classes/People/Person.h \
+ ../Classes/People/Worker.h \
+ ../Classes/Speciefic/AdminMenu.h \
+ ../Classes/Speciefic/LoginData.h \
+ ../Classes/Speciefic/ManagerMenu.h \
  ../Classes/Speciefic/Menu.cpp \
  ../Classes/Speciefic/Menu.h
 CMakeFiles/Kursach_OOP.dir/main.cpp.obj: \
  ../Classes/Enums/WorkType.h \
- ../Classes/Managers/EmployerManager.h \
- ../Classes/Managers/FileWriter.h \
  ../Classes/Managers/Singleton.h \
  ../Classes/People/AvaliableWorker.h \
  ../Classes/People/Person.h \

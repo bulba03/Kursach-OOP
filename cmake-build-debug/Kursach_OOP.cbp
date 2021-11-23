@@ -137,6 +137,12 @@
 		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.h">
 			<Option target="Kursach_OOP"/>
 		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/ManagerMenu.cpp">
+			<Option target="Kursach_OOP"/>
+		</Unit>
+		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/ManagerMenu.h">
+			<Option target="Kursach_OOP"/>
+		</Unit>
 		<Unit filename="D:/Work/Kursach-OOP/Classes/Speciefic/Menu.cpp">
 			<Option target="Kursach_OOP"/>
 		</Unit>

@@ -20,7 +20,7 @@ private:
         void SetInfo(int _age, int _salary, std::string _name, WorkType _type);
         std::string GetName() override;
         WorkType GetWorkType();
-        WorkType SetWorkType(WorkType type);
+        void SetWorkType(WorkType type);
 
     Worker();
 };

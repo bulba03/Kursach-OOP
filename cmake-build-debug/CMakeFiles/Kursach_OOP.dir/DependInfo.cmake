@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Work/Kursach-OOP/Classes/People/Worker.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj"
   "D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj"
   "D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/LoginData.cpp.obj"
+  "D:/Work/Kursach-OOP/Classes/Speciefic/ManagerMenu.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/ManagerMenu.cpp.obj"
   "D:/Work/Kursach-OOP/Classes/Speciefic/Menu.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Menu.cpp.obj"
   "D:/Work/Kursach-OOP/main.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/main.cpp.obj"
   )

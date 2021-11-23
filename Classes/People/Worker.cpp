@@ -35,8 +35,7 @@ Worker::Worker(int _age, int _salary, std::string _name,WorkType type) {
 WorkType Worker::GetWorkType() {
     return workType;
 }
-
-WorkType Worker::SetWorkType(WorkType type) {
+ void Worker::SetWorkType(WorkType type) {
     workType=type;
 }
 
