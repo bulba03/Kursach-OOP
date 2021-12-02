@@ -9,9 +9,9 @@
 
 bool Menu::ManagerLogin() {
     string log,pass;
-    cout<<"Ââåäèòå ëîãèí: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»Ð¾Ð³Ð¸Ð½: ";
     cin>>log;
-    cout<<"Ââåäèòå ïàðîëü: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ: ";
     cin>>pass;
     LoginData loginData = LoginData(log,pass);
     if(Singleton<FileWriter>::getInstance().LoadManagerLogPass(loginData))
@@ -23,9 +23,9 @@ bool Menu::ManagerLogin() {
 
 bool Menu::AdminLogin() {
     string log,pass;
-    cout<<"Ââåäèòå ëîãèí: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»Ð¾Ð³Ð¸Ð½: ";
     cin>>log;
-    cout<<"Ââåäèòå ïàðîëü: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ: ";
     cin>>pass;
     LoginData loginData = LoginData(log,pass);
     if(Singleton<FileWriter>::getInstance().LoadAdminLogPass(loginData))
@@ -37,20 +37,20 @@ bool Menu::AdminLogin() {
 
 void Menu::Register() {
     string log,pass,code,codetrue = "QWERTY123";
-    cout<<"Ââåäèòå ëîãèí: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»Ð¾Ð³Ð¸Ð½: ";
     cin>>log;
-    cout<<"Ââåäèòå ïàðîëü: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ: ";
     cin>>pass;
-    cout<<"Ââåäèòå ïðèãëàñèòåëüíûé êîä(QWERTY123): ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ ÐºÐ¾Ð´(QWERTY123): ";
     cin>>code;
     if(code==codetrue)
     {
         LoginData logData = LoginData(log,pass);
         Singleton<FileWriter>::getInstance().SaveAdminLogPass(logData);
-        cout<<"Âû óñïåøíî çàðåãèñòðèðîâàëèñü êàê àäìèíèñòðàòîð!"<<endl;
+        cout<<"Ð’Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð»Ð¸ÑÑŒ ÐºÐ°Ðº Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€!"<<endl;
     }
     else{
-        cout<<"Íåïðàâèëüíûé ïðèãëàñèòåëüíûé êîä!"<<endl;
+        cout<<"ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð¿Ñ€Ð¸Ð³Ð»Ð°ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ ÐºÐ¾Ð´!"<<endl;
     }
 }
 
@@ -58,49 +58,51 @@ void Menu::ShowMenu() {
     char ch;
     while(ch!='0')
     {
-        cout<<"1)Âîéòè êàê àäìèíèñòðàòîð\n2)Âîéòè êàê HR-ìåíåäæåð\n3)Ðåãèñòðàöèÿ êàê Àäìèíèñòðàòîð\n4)Ðåãèñòðàöèÿ êàê Ìåíåäæåð"<<endl;
+        cout<<"1)Ð’Ð¾Ð¹Ñ‚Ð¸ ÐºÐ°Ðº Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€\n2)Ð’Ð¾Ð¹Ñ‚Ð¸ ÐºÐ°Ðº HR-Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€\n3)Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ ÐºÐ°Ðº ÐÐ´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€\n4)Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ ÐºÐ°Ðº ÐœÐµÐ½ÐµÐ´Ð¶ÐµÑ€"<<endl;
         cin>>ch;
         switch (ch) {
             case '1': if(AdminLogin())
                 {
-                    cout<<"Âû âîøëè êàê àäìèíèñòðàòîð!"<<endl;
+                    cout<<"Ð’Ñ‹ Ð²Ð¾ÑˆÐ»Ð¸ ÐºÐ°Ðº Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€!"<<endl;
                     Singleton<AdminMenu>::getInstance().ShowMenu();
                 };
                 break;
             case '2': if(ManagerLogin())
                 {
-                    cout<<"Âû âîøëè êàê ìåíåäæåð!"<<endl;
+                    cout<<"Ð’Ñ‹ Ð²Ð¾ÑˆÐ»Ð¸ ÐºÐ°Ðº Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€!"<<endl;
                     Singleton<ManagerMenu>::getInstance().OpenMenu();
                 };break;
             case '3': Register();break;
             case '4': RegisterManager();break;
-            default: cout<<"Íåò òàêîãî âûáîðà!"<<endl;break;
+            default: cout<<"ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð²Ñ‹Ð±Ð¾Ñ€Ð°!"<<endl;break;
         }
     }
 }
 
 void Menu::ShowWorkers(std::vector<Worker> workers) {
-    cout<<right<<setw(20)<<"Íîìåð|"<<setw(20)<<"Èìÿ|"<< setw(20)<<"Âîçðàñò|"<<setw(20)<<"Çàðïëàòà|"<<setw(20)<<"Ñïåöèàëüíîñòü"<<setw(20)<<endl;
+    cout<<right<< "â„–|"<<setw(20)<<"Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ|"<< setw(20)<<"Ð˜Ð¼Ñ"<<setw(20)<<"ÐžÑ‚Ñ‡ÐµÑÑ‚Ð²Ð¾"<<setw(20)<<"Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚|"<<setw(20)<<"Ð—Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð°|"<<setw(20)<<"Ð¡Ð¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ|"<<setw(20)<<"Ð”Ð°Ñ‚Ð° Ð¿Ñ€Ð¸Ð½ÑÑ‚Ð¸Ñ Ð½Ð° Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ"<<endl;
     for(int i=0;i<workers.size();i++)
     {
-        cout<<right<<i+1<<setw(20)<<workers[i].GetName()<<setw(20)<<workers[i].GetAge()<<setw(20)<<workers[i].GetSalary()<<setw(20)<<enum_str[(int)workers[i].GetWorkType()]<<endl;
+        cout<<right<<i+1<<setw(20)<<workers[i].GetSurname()<<setw(20)<<workers[i].GetName()<<setw(20)<<workers[i].GetSecondName()<<setw(20)
+        <<workers[i].GetAge()<<setw(20)<<workers[i].GetSalary()<<setw(20)<<enum_str[(int)workers[i].GetWorkType()]
+        <<setw(20)<<workers[i].getEmpDate().year<<"-"<<workers[i].getEmpDate().month<<"-"<<workers[i].getEmpDate().day<<endl;
     }
 }
 
 void Menu::RegisterManager() {
     string log,pass;
-    cout<<"Ââåäèòå ëîãèí: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»Ð¾Ð³Ð¸Ð½: ";
     cin>>log;
     cout<<endl;
-    cout<<"Ââåäèòå ïàðîëü: ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ: ";
     cin>>pass;
     LoginData logData = LoginData(log,pass);
     Singleton<FileWriter>::getInstance().SaveManagerLogPass(logData);
-    cout<<"Âû óñïåøíî çàðåãèñòðèðîâàëèñü êàê ìåíåäæåð!"<<endl;
+    cout<<"Ð’Ñ‹ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð»Ð¸ÑÑŒ ÐºÐ°Ðº Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€!"<<endl;
 }
 
 void Menu::ShowLabor(vector<AvaliableWorker> avaliableWorkers) {
-    cout<<right<<"Íîìåð|"<<setw(20)<<"Èìÿ|"<< setw(20)<<"Âîçðàñò|"<<setw(20)<<"Çàðïëàòà|"<<setw(20)<<"Ñïåöèàëüíîñòü"<<setw(20)<<"Ñòàæ ðàáîòû"<<setw(20)<<endl;
+    cout<<right<<"â„–|"<<setw(20)<<"Ð˜Ð¼Ñ|"<< setw(20)<<"Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚|"<<setw(20)<<"Ð—Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð°|"<<setw(20)<<"Ð¡Ð¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ"<<setw(20)<<"Ð¡Ñ‚Ð°Ð¶ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹"<<setw(20)<<endl;
     cout<<avaliableWorkers.size()<<endl;
     for(int i=0;i<avaliableWorkers.size();i++)
     {

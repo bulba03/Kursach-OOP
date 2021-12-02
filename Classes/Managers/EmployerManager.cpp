@@ -14,64 +14,64 @@ void EmployerManager::AddWorker(Worker worker) {
 
 std::vector<Worker> EmployerManager::FindByParameter() {
     char c;
-    std::cout<<"Âûáåðèòå ïàðàìåòð äëÿ ïîèñêà:\n1)Èìÿ\n2)Çàðïëàòà\n3)Ñïåöèàëèçàöèÿ\n4)Âîçðàñò"<<std::endl;
+    std::cout<<"Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°:\n1)Ð˜Ð¼Ñ\n2)Ð—Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð°\n3)Ð¡Ð¿ÐµÑ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ\n4)Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚"<<std::endl;
     std::cin>>c;
     while(c!='5')
     {
     switch (c) {
         case '1': {
             std::string _name;
-            std::cout << "Ââåäèòå èìÿ äëÿ ïîèñêà: ";
+            std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°: ";
             std::cin >> _name;
             auto found = FindByName(_name);
             if (!found.empty()) {
-                std::cout << "Ðàáî÷èå íàéäåíû!" << std::endl;
+                std::cout << "Ð Ð°Ð±Ð¾Ñ‡Ð¸Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹!" << std::endl;
                 return found;
             }
-            std::cout<<"Ðàáî÷èõ ñ òàêèì èìåíåì íåò!"<<std::endl;
+            std::cout<<"Ð Ð°Ð±Ð¾Ñ‡Ð¸Ñ… Ñ Ñ‚Ð°ÐºÐ¸Ð¼ Ð¸Ð¼ÐµÐ½ÐµÐ¼ Ð½ÐµÑ‚!"<<std::endl;
             break;
         }
         case '2': {
             int min, max;
-            std::cout << "Ââåäèòå ìèíèìàëüíîå çíà÷åíèå äëÿ ïîèñêà:";
+            std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°:";
             std::cin >> min;
-            std::cout<<"Ââåäèòå ìàêñèìàëüíîå çíà÷åíèå äëÿ ïîèñêà:";
+            std::cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°:";
             std::cin>>max;
             auto found = FindBySalary(min,max);
             if(!found.empty())
             {
-                std::cout<<"Ðàáî÷èå íàéäåû!"<<std::endl;
+                std::cout<<"Ð Ð°Ð±Ð¾Ñ‡Ð¸Ðµ Ð½Ð°Ð¹Ð´ÐµÑ‹!"<<std::endl;
                 return found;
             }
-            std::cout<<"Íåò íè îäíîãî ðàáî÷åãî êîòîðûé áû ñîîòâåòñòîâàë ââåäåííûì äàííûì!"<<std::endl;
+            std::cout<<"ÐÐµÑ‚ Ð½Ð¸ Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ñ€Ð°Ð±Ð¾Ñ‡ÐµÐ³Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð±Ñ‹ ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð¾Ð²Ð°Ð» Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ð¼ Ð´Ð°Ð½Ð½Ñ‹Ð¼!"<<std::endl;
             break;
         }
         case '3': {
             int choise;
-            std::cout<<"Âûáåðèòå ñïåöèàëüíîñòü äëÿ ïîèñêà:\n1)Äèçàéíåð\n2)Ïðîãðàììèñò\n3)Òåõí. õóäîæíèê\n4)ÏÌ\n5)Áèçíåñ àíàëèòèê"<<std::endl;
+            std::cout<<"Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°:\n1)Ð”Ð¸Ð·Ð°Ð¹Ð½ÐµÑ€\n2)ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð¸ÑÑ‚\n3)Ð¢ÐµÑ…Ð½. Ñ…ÑƒÐ´Ð¾Ð¶Ð½Ð¸Ðº\n4)ÐŸÐœ\n5)Ð‘Ð¸Ð·Ð½ÐµÑ Ð°Ð½Ð°Ð»Ð¸Ñ‚Ð¸Ðº"<<std::endl;
             std::cin>>choise;
-            auto found =FindByWorkType((WorkType)choise);
+            auto found =FindByWorkType((WorkType)(choise-1));
             if(!found.empty())
             {
-                std::cout<<"Ðàáî÷èå íàéäåíû!"<<std::endl;
+                std::cout<<"Ð Ð°Ð±Ð¾Ñ‡Ð¸Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹!"<<std::endl;
                 return found;
             }
-            std::cout<<"Íåò íè îäíîãî ðàáî÷åãî êîòîðûé áû ñîîòâåòñòîâàë ââåäåííûì äàííûì!"<<std::endl;
+            std::cout<<"ÐÐµÑ‚ Ð½Ð¸ Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ñ€Ð°Ð±Ð¾Ñ‡ÐµÐ³Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð±Ñ‹ ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð¾Ð²Ð°Ð» Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ð¼ Ð´Ð°Ð½Ð½Ñ‹Ð¼!"<<std::endl;
             break;
         }
         case '4': {
             int ageMin,ageMax;
-            std::cout<<"Ââåäèòå ìèíèìàëüíûé âîçðàñò äëÿ ïîèñêà: ";
+            std::cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°: ";
             std::cin>>ageMin;
-            std::cout<<"Ââåäèòå ìàêñèìàëüíûé âîçðàñò äëÿ ïîèñêà: ";
+            std::cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚ Ð´Ð»Ñ Ð¿Ð¾Ð¸ÑÐºÐ°: ";
             std::cin>>ageMax;
             auto found = FindByAge(ageMin,ageMax);
             if(!found.empty()) {
-                std::cout << "Ðàáî÷èå íàéäåíû!" << std::endl;
+                std::cout << "Ð Ð°Ð±Ð¾Ñ‡Ð¸Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹!" << std::endl;
                 return found;
             }
 
-            std::cout<<"Íåò íè îäíîãî ðàáî÷åãî êîòîðûé áû ñîîòâåòñòîâàë ââåäåííûì äàííûì!"<<std::endl;
+            std::cout<<"ÐÐµÑ‚ Ð½Ð¸ Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ñ€Ð°Ð±Ð¾Ñ‡ÐµÐ³Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð±Ñ‹ ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð¾Ð²Ð°Ð» Ð²Ð²ÐµÐ´ÐµÐ½Ð½Ñ‹Ð¼ Ð´Ð°Ð½Ð½Ñ‹Ð¼!"<<std::endl;
             break;
         }
 
@@ -132,4 +132,58 @@ std::vector<Worker>EmployerManager::FindByAge(int min, int max) {
         }
     }
     return matchWorkers;
+}
+
+std::vector<Worker> EmployerManager::Sort() {
+    std::cout<<"Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ Ð´Ð»Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸:\n1)Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚\n2)Ð—Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ð°\n3)Ð”Ð°Ñ‚Ð° Ð¿Ñ€Ð¸Ð½ÑÑ‚Ð¸Ñ Ð½Ð° Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ"<<std::endl;
+    char ch;
+    switch (ch) {
+        case '1':
+        {
+            SortByAge();
+        }break;
+        case '2':
+        {
+            SortBySalary();
+        }break;
+        case '3':
+        {
+            SortByEmpDate();
+        }break;
+        default:cout<<"ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ð°!"<<endl;
+    }
+    return workers;
+}
+
+void EmployerManager::SortByAge() {
+    sort(workers.begin(),workers.end(),[](Worker& w1,Worker& w2)
+    {
+        return w1.GetAge()>w2.GetAge();
+    });
+}
+
+void EmployerManager::SortBySalary() {
+    sort(workers.begin(),workers.end(),[](Worker& w1,Worker& w2)
+    {
+        return w1.GetSalary()>w2.GetSalary();
+    });
+
+}
+
+void EmployerManager::SortByEmpDate() {
+    sort(workers.begin(),workers.end(),[](Worker& w1,Worker& w2)
+    {
+        if(w1.getEmpDate().year>w2.getEmpDate().year)
+        {
+            if(w1.getEmpDate().month>w2.getEmpDate().month)
+            {
+                if(w1.getEmpDate().day>w2.getEmpDate().day)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    });
+
 }

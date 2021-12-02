@@ -31,3 +31,11 @@ using namespace std;
         cout << "Salary: " << salary << endl;
         cout << "Name: " << name << endl;
     }
+
+std::string Person::GetSecondName() {
+    return secondName;
+}
+
+std::string Person::GetSurname() {
+    return surname;
+}

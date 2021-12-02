@@ -35,3 +35,5 @@ AvaliableWorker::AvaliableWorker() {
 int AvaliableWorker::GetYearsOfWork() {
     return yearsOfWork;
 }
+
+

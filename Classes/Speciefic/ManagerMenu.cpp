@@ -8,61 +8,62 @@
 void ManagerMenu::OpenMenu() {
     char choise;
     while (choise != '0') {
-        cout << "1) Вывести список рабочих" << endl;
-        cout << "2) Нанять рабочего" << endl;
-        cout << "3) Уволить рабочего" << endl;
-        cout << "4) Поиск работника" << endl;
-        cout << "0) Выход в основное меню"<<endl;
+        Singleton<FileWriter>::getInstance().LoadLabor();
+        Singleton<FileWriter>::getInstance().LoadWorkers();
+
+        cout << "1) Р’С‹РІРµСЃС‚Рё СЃРїРёСЃРѕРє СЂР°Р±РѕС‡РёС…" << endl;
+        cout << "2) РќР°РЅСЏС‚СЊ СЂР°Р±РѕС‡РµРіРѕ" << endl;
+        cout << "3) РЈРІРѕР»РёС‚СЊ СЂР°Р±РѕС‡РµРіРѕ" << endl;
+        cout << "4) РџРѕРёСЃРє СЂР°Р±РѕС‚РЅРёРєР°" << endl;
+        cout << "0) Р’С‹С…РѕРґ РІ РѕСЃРЅРѕРІРЅРѕРµ РјРµРЅСЋ"<<endl;
 
         cin >> choise;
         switch (choise) {
             case '1': {
-                Singleton<FileWriter>::getInstance().LoadWorkers();
                 auto workersList = Singleton<EmployerManager>::getInstance().GetWorkersList();
                 Menu::ShowWorkers(workersList);
             }break;
             case '2': {
-                Singleton<FileWriter>::getInstance().LoadLabor();
                 auto avWorkersList = Singleton<Labor>::getInstance().GetAvaliableWorkers();
                 Menu::ShowLabor(avWorkersList);
-                cout<<"Введите номер работника которого хотите нанять: ";
+                cout<<"Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ СЂР°Р±РѕС‚РЅРёРєР° РєРѕС‚РѕСЂРѕРіРѕ С…РѕС‚РёС‚Рµ РЅР°РЅСЏС‚СЊ: ";
                 int num;
                 cin>>num;
-                if(num<1||num>avWorkersList.size())
+                if(!isValueInRange(num,1,avWorkersList.size()))
                 {
-                    cout<<"Неверное значени"<<endl;
+                    cout<<"РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРё"<<endl;
                     break;
                 }
-                Worker newWorker = Worker();
+
                 auto temp = avWorkersList.at(num-1);
-                newWorker.SetInfo(temp.GetAge(),temp.GetSalary(),temp.GetName(),temp.GetType());
+                Worker newWorker(temp.GetAge(),temp.GetSalary(),temp.GetName(),temp.GetType());
                 avWorkersList.erase(avWorkersList.begin()+num-1);
                 Singleton<FileWriter>::getInstance().SaveLabor(avWorkersList);
                 Singleton<EmployerManager>::getInstance().AddWorker(newWorker);
                 Singleton<FileWriter>::getInstance().SaveWorker(Singleton<EmployerManager>::getInstance().GetWorkersList());
-                cout<<newWorker.GetName()<<" Успешно нанят!"<<endl;
+                cout<<newWorker.GetName()<<" РЈСЃРїРµС€РЅРѕ РЅР°РЅСЏС‚!"<<endl;
             }break;
             case '3': {
                 auto workersList = Singleton<EmployerManager>::getInstance().GetWorkersList();
                 Menu::ShowWorkers(workersList);
                 int num;
                 cin>>num;
-                if(isValueInRange(num,0,(int)workersList.size()))
+                if(!isValueInRange(num,0,(int)workersList.size()))
                 {
-                    cout<<"Неверное значени"<<endl;
+                    cout<<"РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРё"<<endl;
                     break;
                 }
                 AvaliableWorker av = AvaliableWorker(workersList.at(num));
-                workersList.erase(workersList.begin()+num-1);
+                workersList.erase(workersList.begin()+num);
                 Singleton<Labor>::getInstance().AddAvaliableWorker(av);
-                cout<<av.GetName()<<" уволен:("<<endl;
+                cout<<av.GetName()<<" СѓРІРѕР»РµРЅ:("<<endl;
             }break;
             case '4':{
                 auto foundedWorkers = Singleton<EmployerManager>::getInstance().FindByParameter();
                 Menu::ShowWorkers(foundedWorkers);
             }break;
-            case '0':return;
-            default:cout<<"Неверное значение!"<<endl;
+            case '0':return;break;
+            default:cout<<"РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ!"<<endl;break;
         }
     }
 }

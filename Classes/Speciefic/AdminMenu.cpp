@@ -9,18 +9,19 @@
 
 using namespace std;
 void AdminMenu::ShowMenu() {
-    Singleton<FileWriter>::getInstance().LoadLabor();
-    Singleton<FileWriter>::getInstance().LoadWorkers();
     char choise;
     while (choise != '0') {
-        cout << "1) Âûâåñòè ñïèñîê ðàáî÷èõ" << endl;
-        cout << "2) Äîáàâèòü Ðàáî÷åãî" << endl;
-        cout << "3) Óäàëèòü ðàáî÷åãî" << endl;
-        cout << "4) Äîáàâèòü ðàáîòíèêà íà áèðæó" << endl;
-        cout << "5) Óäàëèòü ðàáîòíèêà ñ áèðæè"<<endl;
-        cout << "6) Î÷èñòèòü Ñïèñîê ðàáîòíèêîâ"<<endl;
-        cout << "7) Î÷èñòèòü áèðæó"<<endl;
-        cout << "0) Âûõîä"<<endl;
+        Singleton<FileWriter>::getInstance().LoadLabor();
+        Singleton<FileWriter>::getInstance().LoadWorkers();
+
+        cout << "1) Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ ÑÐ¿Ð¸ÑÐ¾Ðº Ñ€Ð°Ð±Ð¾Ñ‡Ð¸Ñ…" << endl;
+        cout << "2) Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð Ð°Ð±Ð¾Ñ‡ÐµÐ³Ð¾" << endl;
+        cout << "3) Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ñ€Ð°Ð±Ð¾Ñ‡ÐµÐ³Ð¾" << endl;
+        cout << "4) Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ° Ð½Ð° Ð±Ð¸Ñ€Ð¶Ñƒ" << endl;
+        cout << "5) Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ° Ñ Ð±Ð¸Ñ€Ð¶Ð¸"<<endl;
+        cout << "6) ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð¡Ð¿Ð¸ÑÐ¾Ðº Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ¾Ð²"<<endl;
+        cout << "7) ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð±Ð¸Ñ€Ð¶Ñƒ"<<endl;
+        cout << "0) Ð’Ñ‹Ñ…Ð¾Ð´"<<endl;
         cin>>choise;
         switch (choise) {
             case '1': {
@@ -28,61 +29,63 @@ void AdminMenu::ShowMenu() {
                 Menu::ShowWorkers(Singleton<EmployerManager>::getInstance().GetWorkersList());
             }break;
             case '2': {
-                Worker worker = Worker();
-            std::string fio;
+
+            std::string surname, name, secondName;
             int age,salary,type;
-            cout<<"Ââåäèòå ÔÈÎ ðàáîòíèêà: ";
-            cin>>fio;
-            cout<<"Ââåäèòå âîçðàñò ðàáîòíèêà: ";
+            cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ„Ð°Ð¼Ð¸Ð»Ð¸ÑŽ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°: ";
+            cin>>surname;
+            cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°";
+            cin>>name;
+            cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾Ñ‚Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°";
+            cin>>secondName;
+            cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°: ";
             cin>>age;
-            cout<<"Ââåäèòå çàðïëàòó ðàáîòíèêà: ";
+            cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñƒ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°: ";
             cin>>salary;
-            cout<<"Âûáåðèòå ñïåöèàëüíîñòü ðàáîòíèêà: "<<endl;
-            cout<<"1) Äèçàéíåð"<<endl;
-            cout<<"2) Ïðîãðàììèñò"<<endl;
-            cout<<"3) ÏÌ"<<endl;
-            cout<<"4) Òåõí. õóäîæíèê"<<endl;
-            cout<<"5) Áèçíåñ àíàëèòèê"<<endl;
+            cout<<"Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°: "<<endl;
+            cout<<"1) Ð”Ð¸Ð·Ð°Ð¹Ð½ÐµÑ€"<<endl;
+            cout<<"2) ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð¸ÑÑ‚"<<endl;
+            cout<<"3) ÐŸÐœ"<<endl;
+            cout<<"4) Ð¢ÐµÑ…Ð½. Ñ…ÑƒÐ´Ð¾Ð¶Ð½Ð¸Ðº"<<endl;
+            cout<<"5) Ð‘Ð¸Ð·Ð½ÐµÑ Ð°Ð½Ð°Ð»Ð¸Ñ‚Ð¸Ðº"<<endl;
             cin>>type;
             WorkType wType = (WorkType)(type-1);
-            worker.SetInfo(age,salary,fio,wType);
+            Worker worker = Worker(age,salary,surname,name,secondName,wType);
             Singleton<EmployerManager>::getInstance().AddWorker(worker);
-            Singleton<FileWriter>::getInstance().SaveWorker(Singleton<EmployerManager>::getInstance().GetWorkersList());
-            cout<<"Ðàáîòíèê äîáàâëåí!"<<endl;}
+            Singleton<FileWriter>::getInstance().SaveWorker(Singleton<EmployerManager>::getInstance().workers);
+            cout<<"Ð Ð°Ð±Ð¾Ñ‚Ð½Ð¸Ðº Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½!"<<endl;}
             break;
-
-
             case '3':
             {
                 Singleton<FileWriter>::getInstance().LoadWorkers();
                 auto workers = Singleton<EmployerManager>::getInstance().GetWorkersList();
                 Menu::ShowWorkers(workers);
                 int id;
-                cout<<"Ââåäèòå íîìåð ðàáîòíèêà êîòîðîãî õîòèòå óäàëèòü: ";
+                cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ° ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ: ";
                 cin>>id;
                 workers.erase(workers.begin()+id-1);
                 Singleton<FileWriter>::getInstance().SaveWorker(workers);
-                cout<<"Ðàáîòíèê óäàëåí!"<<endl;
+                cout<<"Ð Ð°Ð±Ð¾Ñ‚Ð½Ð¸Ðº ÑƒÐ´Ð°Ð»ÐµÐ½!"<<endl;
             }break;
             case '4':
             {
                 string fio;
                 int age,salary,type,yearsOfWork;
-                cout<<"Ââåäèòå ÔÈÎ ðàáîòíèêà: ";
+                cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¤Ð˜Ðž Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°: ";
                 cin>>fio;
-                cout<<"Ââåäèòå âîçðàñò ðàáîòíèêà: ";
+                cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°: ";
                 cin>>age;
-                cout<<"Ââåäèòå çàðïëàòó ðàáîòíèêà: ";
+                cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð°Ñ€Ð¿Ð»Ð°Ñ‚Ñƒ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°: ";
                 cin>>salary;
-                cout<<"Âûáåðèòå ñïåöèàëüíîñòü ðàáîòíèêà: "<<endl;
-                cout<<"1) Äèçàéíåð"<<endl;
-                cout<<"2) Ïðîãðàììèñò"<<endl;
-                cout<<"3) ÏÌ"<<endl;
-                cout<<"4) Òåõí. õóäîæíèê"<<endl;
-                cout<<"5) Áèçíåñ àíàëèòèê"<<endl;
+                cout<<"Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑÐ¿ÐµÑ†Ð¸Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚ÑŒ Ñ€Ð°Ð±Ð¾Ñ‚Ð½Ð¸ÐºÐ°: "<<endl;
+                cout<<"1) Ð”Ð¸Ð·Ð°Ð¹Ð½ÐµÑ€"<<endl;
+                cout<<"2) ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð¸ÑÑ‚"<<endl;
+                cout<<"3) ÐŸÐœ"<<endl;
+                cout<<"4) Ð¢ÐµÑ…Ð½. Ñ…ÑƒÐ´Ð¾Ð¶Ð½Ð¸Ðº"<<endl;
+                cout<<"5) Ð‘Ð¸Ð·Ð½ÐµÑ Ð°Ð½Ð°Ð»Ð¸Ñ‚Ð¸Ðº"<<endl;
                 cin>>type;
                 WorkType wType = (WorkType)(type-1);
-                cout<<"Ââåäèòå ñòàæ ðàáîòû: ";
+                cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð°Ð¶ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹: ";
                 cin>>yearsOfWork;
                 AvaliableWorker av = AvaliableWorker();
                 av.SetInfo(age,fio,salary,yearsOfWork,wType);
@@ -96,7 +99,7 @@ void AdminMenu::ShowMenu() {
                 auto labor = Singleton<Labor>::getInstance().GetAvaliableWorkers();
                 Menu::ShowLabor(labor);
                 int choise;
-                cout<<"Ââåäèòå íîìåð ðàáî÷åãî êîòîðîãî õîòèòå óäàëèòü: ";
+                cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ñ€Ð°Ð±Ð¾Ñ‡ÐµÐ³Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑƒÐ´Ð°Ð»Ð¸Ñ‚ÑŒ: ";
                 cin>>choise;
                 if(choise<1||choise> labor.size())
                 {
@@ -104,12 +107,12 @@ void AdminMenu::ShowMenu() {
                 }
                 labor.erase(labor.begin()+choise-1);
                 Singleton<FileWriter>::getInstance().SaveLabor(labor);
-                cout<<"Ðàáî÷èé óäàëåí!"<<endl;
+                cout<<"Ð Ð°Ð±Ð¾Ñ‡Ð¸Ð¹ ÑƒÐ´Ð°Ð»ÐµÐ½!"<<endl;
             }break;
             case '6': Singleton<FileWriter>::getInstance().ClearWorkers();break;
             case '7': Singleton<FileWriter>::getInstance().ClearLabor();break;
             case'0':return;break;
-            default:cout<<"Íåò òàêîãî âàðèàíòà!"<<endl;
+            default:cout<<"ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ð°!"<<endl;
         }
         }
     }

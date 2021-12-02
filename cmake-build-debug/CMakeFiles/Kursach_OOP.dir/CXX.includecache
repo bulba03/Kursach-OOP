@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-D:/Work/Kursach-OOP/Classes/Enums/WorkType.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Enums/WorkType.h
 
-D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/EmployerManager.h
 vector
 -
 Singleton.h
-D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Singleton.h
 ../People/Worker.h
-D:/Work/Kursach-OOP/Classes/People/Worker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Worker.h
 
-D:/Work/Kursach-OOP/Classes/Managers/FileWriter.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/FileWriter.h
 Singleton.h
-D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Singleton.h
 ../People/Worker.h
-D:/Work/Kursach-OOP/Classes/People/Worker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Worker.h
 EmployerManager.h
-D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/EmployerManager.h
 ../Speciefic/LoginData.h
-D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/LoginData.h
 ../People/AvaliableWorker.h
-D:/Work/Kursach-OOP/Classes/People/AvaliableWorker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/AvaliableWorker.h
 Labor.h
-D:/Work/Kursach-OOP/Classes/Managers/Labor.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Labor.h
 vector
 -
 sstream
@@ -38,65 +38,77 @@ fstream
 iostream
 -
 
-D:/Work/Kursach-OOP/Classes/Managers/Labor.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Labor.h
 Singleton.h
-D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Singleton.h
 ../People/Worker.h
-D:/Work/Kursach-OOP/Classes/People/Worker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Worker.h
 ../People/AvaliableWorker.h
-D:/Work/Kursach-OOP/Classes/People/AvaliableWorker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/AvaliableWorker.h
 
-D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Singleton.h
 string
 -
 
-D:/Work/Kursach-OOP/Classes/People/AvaliableWorker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/AvaliableWorker.h
 Worker.h
-D:/Work/Kursach-OOP/Classes/People/Worker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Worker.h
 
-D:/Work/Kursach-OOP/Classes/People/Person.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Person.h
 string
-D:/Work/Kursach-OOP/Classes/People/string
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/string
 ../Enums/WorkType.h
-D:/Work/Kursach-OOP/Classes/Enums/WorkType.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Enums/WorkType.h
 
-D:/Work/Kursach-OOP/Classes/People/Worker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Worker.h
 vector
 -
 Person.h
-D:/Work/Kursach-OOP/Classes/People/Person.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Person.h
 ../Enums/WorkType.h
-D:/Work/Kursach-OOP/Classes/Enums/WorkType.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Enums/WorkType.h
 
-D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.cpp
-iostream
--
-AdminMenu.h
-D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.h
-../Managers/EmployerManager.h
-D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.h
-../Managers/FileWriter.h
-D:/Work/Kursach-OOP/Classes/Managers/FileWriter.h
-
-D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/AdminMenu.h
 ../Managers/Singleton.h
-D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Singleton.h
 Menu.h
-D:/Work/Kursach-OOP/Classes/Speciefic/Menu.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/Menu.h
 
-D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/LoginData.h
 string
 -
 
-D:/Work/Kursach-OOP/Classes/Speciefic/Menu.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/ManagerMenu.h
+iostream
+-
+iomanip
+-
+Menu.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/Menu.h
+../Managers/Labor.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Labor.h
+../Managers/EmployerManager.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/EmployerManager.h
+
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/Menu.cpp
+Menu.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/Menu.h
+../Managers/FileWriter.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/FileWriter.h
+ManagerMenu.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/ManagerMenu.h
+AdminMenu.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/AdminMenu.h
+
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/Menu.h
 iostream
 -
 LoginData.h
-D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/LoginData.h
 ../Managers/Singleton.h
-D:/Work/Kursach-OOP/Classes/Managers/Singleton.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Singleton.h
 ../People/Worker.h
-D:/Work/Kursach-OOP/Classes/People/Worker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Worker.h
 ../People/AvaliableWorker.h
-D:/Work/Kursach-OOP/Classes/People/AvaliableWorker.h
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/AvaliableWorker.h
 

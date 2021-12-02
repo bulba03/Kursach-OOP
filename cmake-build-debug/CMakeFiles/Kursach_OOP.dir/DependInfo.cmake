@@ -8,20 +8,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Work/Kursach-OOP/Classes/Managers/EmployerManager.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/Managers/FileWriter.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/Managers/Labor.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/Managers/Singleton.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/People/AvaliableWorker.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/People/AvaliableWorker.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/People/Person.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/People/Person.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/People/Worker.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/Speciefic/AdminMenu.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/Speciefic/LoginData.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/LoginData.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/Speciefic/ManagerMenu.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/ManagerMenu.cpp.obj"
-  "D:/Work/Kursach-OOP/Classes/Speciefic/Menu.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Menu.cpp.obj"
-  "D:/Work/Kursach-OOP/main.cpp" "D:/Work/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/main.cpp.obj"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/EmployerManager.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/EmployerManager.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/FileWriter.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/FileWriter.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Labor.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/Labor.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Managers/Singleton.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Managers/Singleton.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/AvaliableWorker.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/People/AvaliableWorker.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Person.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/People/Person.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Worker.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/People/Worker.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/AdminMenu.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/AdminMenu.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/LoginData.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/LoginData.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/ManagerMenu.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/ManagerMenu.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/Menu.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/Classes/Speciefic/Menu.cpp.o"
+  "/Users/mikhail/Documents/GitHub/Kursach-OOP/main.cpp" "/Users/mikhail/Documents/GitHub/Kursach-OOP/cmake-build-debug/CMakeFiles/Kursach_OOP.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

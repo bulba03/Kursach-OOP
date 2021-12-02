@@ -13,13 +13,16 @@ public: std::vector<Worker> workers;
      std::vector<Worker> GetWorkersList();
      void AddWorker(Worker worker);
      std::vector<Worker> FindByParameter();
+     std::vector<Worker> Sort();
 
 private:
     std::vector<Worker> FindByName(std::string _name);
     bool isValueInRange(int val, int min, int max);
     std::vector<Worker> FindBySalary(int min, int max);
     std::vector<Worker> FindByWorkType(WorkType type);
-
+    void SortByAge();
+    void SortBySalary();
+    void SortByEmpDate();
     std::vector<Worker> FindByAge(int min, int max);
 };
 
