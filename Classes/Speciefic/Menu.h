@@ -11,6 +11,7 @@
 #include "../Managers/Singleton.h"
 #include "../People/Worker.h"
 #include "../People/AvaliableWorker.h"
+#include <iomanip>
 
 using namespace std;
 class Menu: Singleton<Menu> {
@@ -25,6 +26,7 @@ private: bool AdminLogin();
 public:void ShowMenu();
 
 protected: void ShowWorkers(std::vector<Worker> workers);
+
     void ShowLabor(vector<AvaliableWorker> avaliableWorkers);
 };
 #endif //KURSACH_OOP_MENU_H

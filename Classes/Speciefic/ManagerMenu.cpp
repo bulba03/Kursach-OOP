@@ -36,7 +36,7 @@ void ManagerMenu::OpenMenu() {
                 }
 
                 auto temp = avWorkersList.at(num-1);
-                Worker newWorker(temp.GetAge(),temp.GetSalary(),temp.GetName(),temp.GetType());
+                Worker newWorker(temp.GetAge(),temp.GetSalary(),temp.GetSurname(),temp.GetName(),temp.GetSecondName(),temp.GetType());
                 avWorkersList.erase(avWorkersList.begin()+num-1);
                 Singleton<FileWriter>::getInstance().SaveLabor(avWorkersList);
                 Singleton<EmployerManager>::getInstance().AddWorker(newWorker);

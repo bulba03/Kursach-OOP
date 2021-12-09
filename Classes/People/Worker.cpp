@@ -83,13 +83,6 @@ std::string Worker::GetSurname() {
 std::string Worker::GetSecondName() {
     return Person::GetSecondName();
 }
-/*
-Worker::Worker(AvaliableWorker avaliableWorker) {
-    age = avaliableWorker.GetAge();
-    salary = avaliableWorker.GetSalary();
-    name = avaliableWorker.GetName();
-    workType = avaliableWorker.GetType();
-    */
 
 
 

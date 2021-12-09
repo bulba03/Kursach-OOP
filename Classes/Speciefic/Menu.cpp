@@ -6,7 +6,10 @@
 #include "../Managers/FileWriter.h"
 #include "ManagerMenu.h"
 #include "AdminMenu.h"
+#include "iomanip"
+ostream& table(ostream& stream);
 
+ostream& tableSmall(ostream& stream);
 bool Menu::ManagerLogin() {
     string log,pass;
     cout<<"Введите логин: ";
@@ -80,15 +83,24 @@ void Menu::ShowMenu() {
 }
 
 void Menu::ShowWorkers(std::vector<Worker> workers) {
-    cout<<right<< "№|"<<setw(20)<<"Фамилия|"<< setw(20)<<"Имя"<<setw(20)<<"Отчество"<<setw(20)<<"Возраст|"<<setw(20)<<"Зарплата|"<<setw(20)<<"Специальность|"<<setw(20)<<"Дата принятия на работу"<<endl;
+    cout<<"#"<<table<<"Фамилия"<<table<<"Имя"<<table<<"Отчество"<<table
+    <<"Возраст"<<table<<"Зарплата"<<tableSmall<<"Специальность"
+        <<table<<"Дата принятия на работу"<<endl;
     for(int i=0;i<workers.size();i++)
     {
-        cout<<right<<i+1<<setw(20)<<workers[i].GetSurname()<<setw(20)<<workers[i].GetName()<<setw(20)<<workers[i].GetSecondName()<<setw(20)
-        <<workers[i].GetAge()<<setw(20)<<workers[i].GetSalary()<<setw(20)<<enum_str[(int)workers[i].GetWorkType()]
-        <<setw(20)<<workers[i].getEmpDate().year<<"-"<<workers[i].getEmpDate().month<<"-"<<workers[i].getEmpDate().day<<endl;
+        cout<<i+1<<table<<workers[i].GetSurname()<<table<<workers[i].GetName()<<table<<workers[i].GetSecondName()<<tableSmall
+        <<workers[i].GetAge()<<tableSmall<<workers[i].GetSalary()<<table<<enum_str[(int)workers[i].GetWorkType()]
+        <<table<<workers[i].getEmpDate().year<<"-"<<workers[i].getEmpDate().month<<"-"<<workers[i].getEmpDate().day<<endl;
     }
 }
-
+ostream& table(ostream& stream) {
+    stream <<"|"<< setw(20)<<setfill(' ');
+    return stream;
+}
+ostream& tableSmall(ostream& stream) {
+    stream <<"|"<< setw(13)<<setfill(' ');
+    return stream;
+}
 void Menu::RegisterManager() {
     string log,pass;
     cout<<"Введите логин: ";

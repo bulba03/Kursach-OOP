@@ -69,10 +69,14 @@ void AdminMenu::ShowMenu() {
             }break;
             case '4':
             {
-                string fio;
+                string surname,name,secondName;
                 int age,salary,type,yearsOfWork;
-                cout<<"Введите ФИО работника: ";
-                cin>>fio;
+                cout<<"Введите Фамилию работника: ";
+                cin>>surname;
+                cout<<"Введите имя работника: ";
+                cin>>name;
+                cout<<"Введите отчетство работника: ";
+                cin>>secondName;
                 cout<<"Введите возраст работника: ";
                 cin>>age;
                 cout<<"Введите зарплату работника: ";
@@ -88,7 +92,7 @@ void AdminMenu::ShowMenu() {
                 cout<<"Введите стаж работы: ";
                 cin>>yearsOfWork;
                 AvaliableWorker av = AvaliableWorker();
-                av.SetInfo(age,fio,salary,yearsOfWork,wType);
+                av.SetInfo(age,surname,name,secondName,salary,yearsOfWork,wType);
                 auto laborMembers = Singleton<Labor>::getInstance().GetAvaliableWorkers();
                 laborMembers.push_back(av);
                 Singleton<FileWriter>::getInstance().SaveLabor(laborMembers);

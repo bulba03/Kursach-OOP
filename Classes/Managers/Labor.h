@@ -12,7 +12,6 @@ class Labor: Singleton<Labor> {
 private:
 public:std::vector<AvaliableWorker> avaliableWorkers;
     std::vector<AvaliableWorker> GetAvaliableWorkers();
-        void Hire(AvaliableWorker avaliableWorker);
         void AddAvaliableWorker(AvaliableWorker avWorker);
 };
 

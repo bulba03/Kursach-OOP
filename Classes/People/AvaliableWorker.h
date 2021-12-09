@@ -15,7 +15,7 @@ private:
         WorkType type;
 public:AvaliableWorker();
         AvaliableWorker(Worker worker);
-    void SetInfo(int _age, std::string _name, int _salary, int _yearsOfWork, WorkType _type);
+    void SetInfo(int _age,std::string surname, std::string _name,std::string _secondName, int _salary, int _yearsOfWork, WorkType _type);
     WorkType GetType();
     int GetYearsOfWork();
 };

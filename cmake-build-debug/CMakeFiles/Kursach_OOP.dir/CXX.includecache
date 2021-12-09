@@ -99,6 +99,8 @@ ManagerMenu.h
 /Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/ManagerMenu.h
 AdminMenu.h
 /Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/AdminMenu.h
+iomanip
+/Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/iomanip
 
 /Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/Speciefic/Menu.h
 iostream
@@ -111,4 +113,6 @@ LoginData.h
 /Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/Worker.h
 ../People/AvaliableWorker.h
 /Users/mikhail/Documents/GitHub/Kursach-OOP/Classes/People/AvaliableWorker.h
+iomanip
+-
 

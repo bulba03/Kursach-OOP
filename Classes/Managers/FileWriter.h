@@ -26,10 +26,10 @@ public: void SaveWorker(std::vector<Worker> worker)
         file.open("Workers.txt");
         if(file.is_open())
         {
-            for(int i=0;i<worker.size();i++)
+            for(int i=0;i<worker.size()-1;i++)
             {
-                cout<<worker[i].getEmpDate().year<<"----YEAR"<<endl;
-            file<<worker[i].GetName()<<" "<<worker[i].GetAge()<<" "<<worker[i].GetSalary()<<" "<<enum_str[(int)worker[i].GetWorkType()]<<
+                cout<<worker[i].GetName()<<"----Name"<<endl;
+            file<<worker[i].GetSurname()<<" "<<worker[i].GetName()<<" "<<worker[i].GetSecondName()<<" "<<worker[i].GetAge()<<" "<<worker[i].GetSalary()<<" "<<enum_str[(int)worker[i].GetWorkType()]<<
             " "<<worker[i].getEmpDate().year<<" "<<worker[i].getEmpDate().month<<" "<<worker[i].getEmpDate().day<<std::endl;
             }
         }
@@ -54,7 +54,7 @@ public: void SaveWorker(std::vector<Worker> worker)
         Singleton<EmployerManager>::getInstance().workers.clear();
         std::ifstream file;
         file.open("Workers.txt");
-        std::string name;
+        std::string name,surname,secondName;
         int age;
         int salary;
         std::string type;
@@ -62,7 +62,7 @@ public: void SaveWorker(std::vector<Worker> worker)
         WorkType type1;
         if(file.is_open())
         {
-            while(file>>name>>age>>salary>>type>>year>>month>>day)
+            while(file>>surname>>name>>secondName>>age>>salary>>type>>year>>month>>day)
             {
                 Worker worker = Worker();
                 for(int i=0;i<4;i++)
@@ -73,7 +73,7 @@ public: void SaveWorker(std::vector<Worker> worker)
                         break;
                     }
                 }
-                worker.SetInfo(age,salary,name,type1,year,month,day);
+                worker.SetInfo(age,salary,surname,name,secondName,type1,year,month,day);
                 Singleton<EmployerManager>::getInstance().AddWorker(worker);
             }
         }
@@ -164,8 +164,8 @@ public: void SaveWorker(std::vector<Worker> worker)
         {
             int age,salary,yearsOfWork;
             WorkType type1;;
-            std::string fio,type;
-            while(file>>fio>>age>>salary>>type>>yearsOfWork)
+            std::string surname,name,secondname,type;
+            while(file>>surname>>name>>secondname>>age>>salary>>type>>yearsOfWork)
             {
                 AvaliableWorker avW = AvaliableWorker();
                 for(int i=0;i<4;i++)
@@ -176,7 +176,7 @@ public: void SaveWorker(std::vector<Worker> worker)
                         break;
                     }
                 }
-                avW.SetInfo(age,fio,salary,yearsOfWork,type1);
+                avW.SetInfo(age,surname,name,secondname,salary,yearsOfWork,type1);
                 Singleton<Labor>::getInstance().avaliableWorkers.push_back(avW);
             }
         }
